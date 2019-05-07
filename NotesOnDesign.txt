@@ -1,0 +1,31 @@
+
+Actor
+	Player
+	Enemy
+	
+
+Manage States
+Take input vs. Adhere to AI
+	PlayerInputManager
+	EnemyAIManager
+		-Shared AI components?
+
+GameController
+	-GameStates
+
+StateManager (Player,AI's)
+-Shared States vs. unique states?
+	PlayerStates
+	EnemyStates
+	
+Actors are GameObjects with states that can perform actions	
+WITHIN STATES there are ACTIONS
+	An action is a "thing" performed by an actor
+	Actions are usually performed immediately if the state allows it
+
+Action (Just execute) does not include movement 
+	-Move (might need to be separate)
+
+-Jump
+-Shoot
+-death?
