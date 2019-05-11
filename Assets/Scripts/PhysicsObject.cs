@@ -15,8 +15,7 @@ public class PhysicsObject : MonoBehaviour
     protected ContactFilter2D contactFilter;
     protected RaycastHit2D[] hitBuffer = new RaycastHit2D[16];
     protected List<RaycastHit2D> hitBufferList = new List<RaycastHit2D>(16);
-
-
+    
     protected const float minMoveDistance = 0.001f;
     protected const float shellRadius = 0.01f;
 
@@ -77,7 +76,7 @@ public class PhysicsObject : MonoBehaviour
             for (int i = 0; i < hitBufferList.Count; i++)
             {
                 Vector2 currentNormal = hitBufferList[i].normal;
-                if (currentNormal.y > minGroundNormalY)
+                if (currentNormal.y > minGroundNormalY) //.65f 65 degrees
                 {
                     grounded = true;
                     if (yMovement)
@@ -87,6 +86,9 @@ public class PhysicsObject : MonoBehaviour
                     }
                 }
 
+                //if dot product of velocity and colliding normal is negative,
+                //multiply dot product with colliding normal and subtract it from current velocity?
+                //to cancel out part of velocity that would cancel out movement totally when hitting head on angled ceiling 
                 float projection = Vector2.Dot(velocity, currentNormal);
                 if (projection < 0)
                 {
