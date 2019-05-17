@@ -35,14 +35,14 @@ public class PlayerController : PhysicsObject
             }
         }
 
-        bool flipSprite = (spriteRenderer.flipX ? (move.x > 0.01f) : (move.x < 0.01f));
+        bool flipSprite = spriteRenderer.flipX ? (move.x > 0.01f) : (move.x < -0.01f);
         if (flipSprite)
         {
-          //  spriteRenderer.flipX = !spriteRenderer.flipX;
+            spriteRenderer.flipX = !spriteRenderer.flipX;
         }
 
-        //animator.SetBool("grounded", grounded);
-        //animator.SetFloat("velocityX", Mathf.Abs(velocity.x) / maxSpeed);
+        animator.SetBool("grounded", grounded);
+        animator.SetFloat("velocityX", Mathf.Abs(velocity.x) / maxSpeed);
 
         targetVelocity = move * maxSpeed;
     }

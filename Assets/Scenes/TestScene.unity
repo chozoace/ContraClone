@@ -227,7 +227,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1088015860}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.17, y: 0.99, z: 0.048828125}
+  m_LocalPosition: {x: 3.66, y: 1.56, z: 0.048828125}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -436,7 +436,7 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_Size: {x: 0.23, y: 0.34}
+  m_Size: {x: 0.23, y: 0.32}
   m_Direction: 0
 --- !u!50 &1164541627
 Rigidbody2D:
@@ -472,8 +472,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minGroundNormalY: 0.65
-  gravityModifier: 2
-  maxSpeed: 3
+  gravityModifier: 1.7
+  maxSpeed: 1.5
   jumpTakeOffSpeed: 6
 --- !u!95 &1164541629
 Animator:
@@ -485,7 +485,7 @@ Animator:
   m_GameObject: {fileID: 1164541623}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0265c441c97889c4ea2304ab4ec5e703, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
