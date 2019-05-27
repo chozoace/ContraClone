@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerController : PhysicsObject
+public class PlayerController : Actor
 {
 
     public float maxSpeed = 7;
@@ -15,6 +15,24 @@ public class PlayerController : PhysicsObject
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
+        this.equippedGun = new BasicGun(this);
+
+        shootDirection.x = 1;
+    }
+
+    protected override void Update()
+    {
+       handleInput();
+       base.Update();
+    }
+
+    void handleInput()
+    {
+        Action action = InputHandler.Instance().handleInput();
+        if(action != null)
+        {
+            action.execute(this);
+        }
     }
 
     protected override void ComputeVelocity()
@@ -43,6 +61,29 @@ public class PlayerController : PhysicsObject
 
         animator.SetBool("grounded", grounded);
         animator.SetFloat("velocityX", Mathf.Abs(velocity.x) / maxSpeed);
+
+        //update shoot direction
+        if(move.x > 0.01f)
+        {
+            shootDirection.x = 1;
+        }
+        else if(move.x < -0.01f)
+        {
+            shootDirection.x = -1;
+        }
+
+        if (Input.GetKey(KeyCode.W))
+        {
+            shootDirection.y = 1;
+        }
+        if (Input.GetKey(KeyCode.S))
+        {
+            shootDirection.y = -1;
+        }
+        if (Input.GetKeyUp(KeyCode.S) || Input.GetKeyUp(KeyCode.W))
+        {
+            shootDirection.y = 0;
+        }
 
         targetVelocity = move * maxSpeed;
     }

@@ -4,5 +4,6 @@ using UnityEngine;
 
 public interface Action
 {
-    void execute();
+    void execute(Actor actor);
+    
 }
