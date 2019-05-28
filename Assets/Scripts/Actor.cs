@@ -29,8 +29,14 @@ public class Actor : PhysicsObject
         }
     }
 
+    protected virtual void updateShootDirection()
+    {
+
+    }
+
     protected override void Update()
     {
+        updateShootDirection();
         equippedGun.updateShooting();
         base.Update();
     }

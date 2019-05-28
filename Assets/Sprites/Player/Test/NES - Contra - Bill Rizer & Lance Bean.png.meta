@@ -1,152 +1,438 @@
 fileFormatVersion: 2
 guid: b3dc55aa050c0b4419cd95fb514cc19a
 TextureImporter:
-  fileIDToRecycleName:
-    21300000: NES - Contra - Bill Rizer & Lance Bean_0
-    21300002: NES - Contra - Bill Rizer & Lance Bean_1
-    21300004: NES - Contra - Bill Rizer & Lance Bean_2
-    21300006: NES - Contra - Bill Rizer & Lance Bean_3
-    21300008: NES - Contra - Bill Rizer & Lance Bean_4
-    21300010: NES - Contra - Bill Rizer & Lance Bean_5
-    21300012: NES - Contra - Bill Rizer & Lance Bean_6
-    21300014: NES - Contra - Bill Rizer & Lance Bean_7
-    21300016: NES - Contra - Bill Rizer & Lance Bean_8
-    21300018: NES - Contra - Bill Rizer & Lance Bean_9
-    21300020: NES - Contra - Bill Rizer & Lance Bean_10
-    21300022: NES - Contra - Bill Rizer & Lance Bean_11
-    21300024: NES - Contra - Bill Rizer & Lance Bean_12
-    21300026: NES - Contra - Bill Rizer & Lance Bean_13
-    21300028: NES - Contra - Bill Rizer & Lance Bean_14
-    21300030: NES - Contra - Bill Rizer & Lance Bean_15
-    21300032: NES - Contra - Bill Rizer & Lance Bean_16
-    21300034: NES - Contra - Bill Rizer & Lance Bean_17
-    21300036: NES - Contra - Bill Rizer & Lance Bean_18
-    21300038: NES - Contra - Bill Rizer & Lance Bean_19
-    21300040: NES - Contra - Bill Rizer & Lance Bean_20
-    21300042: NES - Contra - Bill Rizer & Lance Bean_21
-    21300044: NES - Contra - Bill Rizer & Lance Bean_22
-    21300046: NES - Contra - Bill Rizer & Lance Bean_23
-    21300048: NES - Contra - Bill Rizer & Lance Bean_24
-    21300050: NES - Contra - Bill Rizer & Lance Bean_25
-    21300052: NES - Contra - Bill Rizer & Lance Bean_26
-    21300054: NES - Contra - Bill Rizer & Lance Bean_27
-    21300056: NES - Contra - Bill Rizer & Lance Bean_28
-    21300058: NES - Contra - Bill Rizer & Lance Bean_29
-    21300060: NES - Contra - Bill Rizer & Lance Bean_30
-    21300062: NES - Contra - Bill Rizer & Lance Bean_31
-    21300064: NES - Contra - Bill Rizer & Lance Bean_32
-    21300066: NES - Contra - Bill Rizer & Lance Bean_33
-    21300068: NES - Contra - Bill Rizer & Lance Bean_34
-    21300070: NES - Contra - Bill Rizer & Lance Bean_35
-    21300072: NES - Contra - Bill Rizer & Lance Bean_36
-    21300074: NES - Contra - Bill Rizer & Lance Bean_37
-    21300076: NES - Contra - Bill Rizer & Lance Bean_38
-    21300078: NES - Contra - Bill Rizer & Lance Bean_39
-    21300080: NES - Contra - Bill Rizer & Lance Bean_40
-    21300082: NES - Contra - Bill Rizer & Lance Bean_41
-    21300084: NES - Contra - Bill Rizer & Lance Bean_42
-    21300086: NES - Contra - Bill Rizer & Lance Bean_43
-    21300088: NES - Contra - Bill Rizer & Lance Bean_44
-    21300090: NES - Contra - Bill Rizer & Lance Bean_45
-    21300092: NES - Contra - Bill Rizer & Lance Bean_46
-    21300094: NES - Contra - Bill Rizer & Lance Bean_47
-    21300096: NES - Contra - Bill Rizer & Lance Bean_48
-    21300098: NES - Contra - Bill Rizer & Lance Bean_49
-    21300100: NES - Contra - Bill Rizer & Lance Bean_50
-    21300102: NES - Contra - Bill Rizer & Lance Bean_51
-    21300104: NES - Contra - Bill Rizer & Lance Bean_52
-    21300106: NES - Contra - Bill Rizer & Lance Bean_53
-    21300108: NES - Contra - Bill Rizer & Lance Bean_54
-    21300110: NES - Contra - Bill Rizer & Lance Bean_55
-    21300112: NES - Contra - Bill Rizer & Lance Bean_56
-    21300114: NES - Contra - Bill Rizer & Lance Bean_57
-    21300116: NES - Contra - Bill Rizer & Lance Bean_58
-    21300118: NES - Contra - Bill Rizer & Lance Bean_59
-    21300120: NES - Contra - Bill Rizer & Lance Bean_60
-    21300122: NES - Contra - Bill Rizer & Lance Bean_61
-    21300124: NES - Contra - Bill Rizer & Lance Bean_62
-    21300126: NES - Contra - Bill Rizer & Lance Bean_63
-    21300128: NES - Contra - Bill Rizer & Lance Bean_64
-    21300130: NES - Contra - Bill Rizer & Lance Bean_65
-    21300132: NES - Contra - Bill Rizer & Lance Bean_66
-    21300134: NES - Contra - Bill Rizer & Lance Bean_67
-    21300136: NES - Contra - Bill Rizer & Lance Bean_68
-    21300138: NES - Contra - Bill Rizer & Lance Bean_69
-    21300140: NES - Contra - Bill Rizer & Lance Bean_70
-    21300142: NES - Contra - Bill Rizer & Lance Bean_71
-    21300144: NES - Contra - Bill Rizer & Lance Bean_72
-    21300146: NES - Contra - Bill Rizer & Lance Bean_73
-    21300148: NES - Contra - Bill Rizer & Lance Bean_74
-    21300150: NES - Contra - Bill Rizer & Lance Bean_75
-    21300152: NES - Contra - Bill Rizer & Lance Bean_76
-    21300154: NES - Contra - Bill Rizer & Lance Bean_77
-    21300156: NES - Contra - Bill Rizer & Lance Bean_78
-    21300158: NES - Contra - Bill Rizer & Lance Bean_79
-    21300160: NES - Contra - Bill Rizer & Lance Bean_80
-    21300162: NES - Contra - Bill Rizer & Lance Bean_81
-    21300164: NES - Contra - Bill Rizer & Lance Bean_82
-    21300166: NES - Contra - Bill Rizer & Lance Bean_83
-    21300168: NES - Contra - Bill Rizer & Lance Bean_84
-    21300170: NES - Contra - Bill Rizer & Lance Bean_85
-    21300172: NES - Contra - Bill Rizer & Lance Bean_86
-    21300174: NES - Contra - Bill Rizer & Lance Bean_87
-    21300176: NES - Contra - Bill Rizer & Lance Bean_88
-    21300178: NES - Contra - Bill Rizer & Lance Bean_89
-    21300180: NES - Contra - Bill Rizer & Lance Bean_90
-    21300182: NES - Contra - Bill Rizer & Lance Bean_91
-    21300184: NES - Contra - Bill Rizer & Lance Bean_92
-    21300186: NES - Contra - Bill Rizer & Lance Bean_93
-    21300188: NES - Contra - Bill Rizer & Lance Bean_94
-    21300190: NES - Contra - Bill Rizer & Lance Bean_95
-    21300192: NES - Contra - Bill Rizer & Lance Bean_96
-    21300194: NES - Contra - Bill Rizer & Lance Bean_97
-    21300196: NES - Contra - Bill Rizer & Lance Bean_98
-    21300198: NES - Contra - Bill Rizer & Lance Bean_99
-    21300200: NES - Contra - Bill Rizer & Lance Bean_100
-    21300202: NES - Contra - Bill Rizer & Lance Bean_101
-    21300204: NES - Contra - Bill Rizer & Lance Bean_102
-    21300206: NES - Contra - Bill Rizer & Lance Bean_103
-    21300208: NES - Contra - Bill Rizer & Lance Bean_104
-    21300210: NES - Contra - Bill Rizer & Lance Bean_105
-    21300212: NES - Contra - Bill Rizer & Lance Bean_106
-    21300214: NES - Contra - Bill Rizer & Lance Bean_107
-    21300216: NES - Contra - Bill Rizer & Lance Bean_108
-    21300218: NES - Contra - Bill Rizer & Lance Bean_109
-    21300220: NES - Contra - Bill Rizer & Lance Bean_110
-    21300222: NES - Contra - Bill Rizer & Lance Bean_111
-    21300224: NES - Contra - Bill Rizer & Lance Bean_112
-    21300226: NES - Contra - Bill Rizer & Lance Bean_113
-    21300228: NES - Contra - Bill Rizer & Lance Bean_114
-    21300230: NES - Contra - Bill Rizer & Lance Bean_115
-    21300232: NES - Contra - Bill Rizer & Lance Bean_116
-    21300234: NES - Contra - Bill Rizer & Lance Bean_117
-    21300236: NES - Contra - Bill Rizer & Lance Bean_118
-    21300238: NES - Contra - Bill Rizer & Lance Bean_119
-    21300240: NES - Contra - Bill Rizer & Lance Bean_120
-    21300242: NES - Contra - Bill Rizer & Lance Bean_121
-    21300244: NES - Contra - Bill Rizer & Lance Bean_122
-    21300246: NES - Contra - Bill Rizer & Lance Bean_123
-    21300248: NES - Contra - Bill Rizer & Lance Bean_124
-    21300250: NES - Contra - Bill Rizer & Lance Bean_125
-    21300252: NES - Contra - Bill Rizer & Lance Bean_126
-    21300254: NES - Contra - Bill Rizer & Lance Bean_127
-    21300256: NES - Contra - Bill Rizer & Lance Bean_128
-    21300258: NES - Contra - Bill Rizer & Lance Bean_129
-    21300260: NES - Contra - Bill Rizer & Lance Bean_130
-    21300262: NES - Contra - Bill Rizer & Lance Bean_131
-    21300264: NES - Contra - Bill Rizer & Lance Bean_132
-    21300266: NES - Contra - Bill Rizer & Lance Bean_133
-    21300268: NES - Contra - Bill Rizer & Lance Bean_134
-    21300270: NES - Contra - Bill Rizer & Lance Bean_135
-    21300272: NES - Contra - Bill Rizer & Lance Bean_136
-    21300274: NES - Contra - Bill Rizer & Lance Bean_137
-    21300276: NES - Contra - Bill Rizer & Lance Bean_138
-    21300278: NES - Contra - Bill Rizer & Lance Bean_139
-    21300280: NES - Contra - Bill Rizer & Lance Bean_140
-    21300282: NES - Contra - Bill Rizer & Lance Bean_141
-    21300284: NES - Contra - Bill Rizer & Lance Bean_142
+  internalIDToNameTable:
+  - first:
+      213: 21300000
+    second: NES - Contra - Bill Rizer & Lance Bean_0
+  - first:
+      213: 21300002
+    second: NES - Contra - Bill Rizer & Lance Bean_1
+  - first:
+      213: 21300004
+    second: NES - Contra - Bill Rizer & Lance Bean_2
+  - first:
+      213: 21300006
+    second: NES - Contra - Bill Rizer & Lance Bean_3
+  - first:
+      213: 21300008
+    second: NES - Contra - Bill Rizer & Lance Bean_4
+  - first:
+      213: 21300010
+    second: NES - Contra - Bill Rizer & Lance Bean_5
+  - first:
+      213: 21300012
+    second: NES - Contra - Bill Rizer & Lance Bean_6
+  - first:
+      213: 21300014
+    second: NES - Contra - Bill Rizer & Lance Bean_7
+  - first:
+      213: 21300016
+    second: NES - Contra - Bill Rizer & Lance Bean_8
+  - first:
+      213: 21300018
+    second: NES - Contra - Bill Rizer & Lance Bean_9
+  - first:
+      213: 21300020
+    second: NES - Contra - Bill Rizer & Lance Bean_10
+  - first:
+      213: 21300022
+    second: NES - Contra - Bill Rizer & Lance Bean_11
+  - first:
+      213: 21300024
+    second: NES - Contra - Bill Rizer & Lance Bean_12
+  - first:
+      213: 21300026
+    second: NES - Contra - Bill Rizer & Lance Bean_13
+  - first:
+      213: 21300028
+    second: NES - Contra - Bill Rizer & Lance Bean_14
+  - first:
+      213: 21300030
+    second: NES - Contra - Bill Rizer & Lance Bean_15
+  - first:
+      213: 21300032
+    second: NES - Contra - Bill Rizer & Lance Bean_16
+  - first:
+      213: 21300034
+    second: NES - Contra - Bill Rizer & Lance Bean_17
+  - first:
+      213: 21300036
+    second: NES - Contra - Bill Rizer & Lance Bean_18
+  - first:
+      213: 21300038
+    second: NES - Contra - Bill Rizer & Lance Bean_19
+  - first:
+      213: 21300040
+    second: NES - Contra - Bill Rizer & Lance Bean_20
+  - first:
+      213: 21300042
+    second: NES - Contra - Bill Rizer & Lance Bean_21
+  - first:
+      213: 21300044
+    second: NES - Contra - Bill Rizer & Lance Bean_22
+  - first:
+      213: 21300046
+    second: NES - Contra - Bill Rizer & Lance Bean_23
+  - first:
+      213: 21300048
+    second: NES - Contra - Bill Rizer & Lance Bean_24
+  - first:
+      213: 21300050
+    second: NES - Contra - Bill Rizer & Lance Bean_25
+  - first:
+      213: 21300052
+    second: NES - Contra - Bill Rizer & Lance Bean_26
+  - first:
+      213: 21300054
+    second: NES - Contra - Bill Rizer & Lance Bean_27
+  - first:
+      213: 21300056
+    second: NES - Contra - Bill Rizer & Lance Bean_28
+  - first:
+      213: 21300058
+    second: NES - Contra - Bill Rizer & Lance Bean_29
+  - first:
+      213: 21300060
+    second: NES - Contra - Bill Rizer & Lance Bean_30
+  - first:
+      213: 21300062
+    second: NES - Contra - Bill Rizer & Lance Bean_31
+  - first:
+      213: 21300064
+    second: NES - Contra - Bill Rizer & Lance Bean_32
+  - first:
+      213: 21300066
+    second: NES - Contra - Bill Rizer & Lance Bean_33
+  - first:
+      213: 21300068
+    second: NES - Contra - Bill Rizer & Lance Bean_34
+  - first:
+      213: 21300070
+    second: NES - Contra - Bill Rizer & Lance Bean_35
+  - first:
+      213: 21300072
+    second: NES - Contra - Bill Rizer & Lance Bean_36
+  - first:
+      213: 21300074
+    second: NES - Contra - Bill Rizer & Lance Bean_37
+  - first:
+      213: 21300076
+    second: NES - Contra - Bill Rizer & Lance Bean_38
+  - first:
+      213: 21300078
+    second: NES - Contra - Bill Rizer & Lance Bean_39
+  - first:
+      213: 21300080
+    second: NES - Contra - Bill Rizer & Lance Bean_40
+  - first:
+      213: 21300082
+    second: NES - Contra - Bill Rizer & Lance Bean_41
+  - first:
+      213: 21300084
+    second: NES - Contra - Bill Rizer & Lance Bean_42
+  - first:
+      213: 21300086
+    second: NES - Contra - Bill Rizer & Lance Bean_43
+  - first:
+      213: 21300088
+    second: NES - Contra - Bill Rizer & Lance Bean_44
+  - first:
+      213: 21300090
+    second: NES - Contra - Bill Rizer & Lance Bean_45
+  - first:
+      213: 21300092
+    second: NES - Contra - Bill Rizer & Lance Bean_46
+  - first:
+      213: 21300094
+    second: NES - Contra - Bill Rizer & Lance Bean_47
+  - first:
+      213: 21300096
+    second: NES - Contra - Bill Rizer & Lance Bean_48
+  - first:
+      213: 21300098
+    second: NES - Contra - Bill Rizer & Lance Bean_49
+  - first:
+      213: 21300100
+    second: NES - Contra - Bill Rizer & Lance Bean_50
+  - first:
+      213: 21300102
+    second: NES - Contra - Bill Rizer & Lance Bean_51
+  - first:
+      213: 21300104
+    second: NES - Contra - Bill Rizer & Lance Bean_52
+  - first:
+      213: 21300106
+    second: NES - Contra - Bill Rizer & Lance Bean_53
+  - first:
+      213: 21300108
+    second: NES - Contra - Bill Rizer & Lance Bean_54
+  - first:
+      213: 21300110
+    second: NES - Contra - Bill Rizer & Lance Bean_55
+  - first:
+      213: 21300112
+    second: NES - Contra - Bill Rizer & Lance Bean_56
+  - first:
+      213: 21300114
+    second: NES - Contra - Bill Rizer & Lance Bean_57
+  - first:
+      213: 21300116
+    second: NES - Contra - Bill Rizer & Lance Bean_58
+  - first:
+      213: 21300118
+    second: NES - Contra - Bill Rizer & Lance Bean_59
+  - first:
+      213: 21300120
+    second: NES - Contra - Bill Rizer & Lance Bean_60
+  - first:
+      213: 21300122
+    second: NES - Contra - Bill Rizer & Lance Bean_61
+  - first:
+      213: 21300124
+    second: NES - Contra - Bill Rizer & Lance Bean_62
+  - first:
+      213: 21300126
+    second: NES - Contra - Bill Rizer & Lance Bean_63
+  - first:
+      213: 21300128
+    second: NES - Contra - Bill Rizer & Lance Bean_64
+  - first:
+      213: 21300130
+    second: NES - Contra - Bill Rizer & Lance Bean_65
+  - first:
+      213: 21300132
+    second: NES - Contra - Bill Rizer & Lance Bean_66
+  - first:
+      213: 21300134
+    second: NES - Contra - Bill Rizer & Lance Bean_67
+  - first:
+      213: 21300136
+    second: NES - Contra - Bill Rizer & Lance Bean_68
+  - first:
+      213: 21300138
+    second: NES - Contra - Bill Rizer & Lance Bean_69
+  - first:
+      213: 21300140
+    second: NES - Contra - Bill Rizer & Lance Bean_70
+  - first:
+      213: 21300142
+    second: NES - Contra - Bill Rizer & Lance Bean_71
+  - first:
+      213: 21300144
+    second: NES - Contra - Bill Rizer & Lance Bean_72
+  - first:
+      213: 21300146
+    second: NES - Contra - Bill Rizer & Lance Bean_73
+  - first:
+      213: 21300148
+    second: NES - Contra - Bill Rizer & Lance Bean_74
+  - first:
+      213: 21300150
+    second: NES - Contra - Bill Rizer & Lance Bean_75
+  - first:
+      213: 21300152
+    second: NES - Contra - Bill Rizer & Lance Bean_76
+  - first:
+      213: 21300154
+    second: NES - Contra - Bill Rizer & Lance Bean_77
+  - first:
+      213: 21300156
+    second: NES - Contra - Bill Rizer & Lance Bean_78
+  - first:
+      213: 21300158
+    second: NES - Contra - Bill Rizer & Lance Bean_79
+  - first:
+      213: 21300160
+    second: NES - Contra - Bill Rizer & Lance Bean_80
+  - first:
+      213: 21300162
+    second: NES - Contra - Bill Rizer & Lance Bean_81
+  - first:
+      213: 21300164
+    second: NES - Contra - Bill Rizer & Lance Bean_82
+  - first:
+      213: 21300166
+    second: NES - Contra - Bill Rizer & Lance Bean_83
+  - first:
+      213: 21300168
+    second: NES - Contra - Bill Rizer & Lance Bean_84
+  - first:
+      213: 21300170
+    second: NES - Contra - Bill Rizer & Lance Bean_85
+  - first:
+      213: 21300172
+    second: NES - Contra - Bill Rizer & Lance Bean_86
+  - first:
+      213: 21300174
+    second: NES - Contra - Bill Rizer & Lance Bean_87
+  - first:
+      213: 21300176
+    second: NES - Contra - Bill Rizer & Lance Bean_88
+  - first:
+      213: 21300178
+    second: NES - Contra - Bill Rizer & Lance Bean_89
+  - first:
+      213: 21300180
+    second: NES - Contra - Bill Rizer & Lance Bean_90
+  - first:
+      213: 21300182
+    second: NES - Contra - Bill Rizer & Lance Bean_91
+  - first:
+      213: 21300184
+    second: NES - Contra - Bill Rizer & Lance Bean_92
+  - first:
+      213: 21300186
+    second: NES - Contra - Bill Rizer & Lance Bean_93
+  - first:
+      213: 21300188
+    second: NES - Contra - Bill Rizer & Lance Bean_94
+  - first:
+      213: 21300190
+    second: NES - Contra - Bill Rizer & Lance Bean_95
+  - first:
+      213: 21300192
+    second: NES - Contra - Bill Rizer & Lance Bean_96
+  - first:
+      213: 21300194
+    second: NES - Contra - Bill Rizer & Lance Bean_97
+  - first:
+      213: 21300196
+    second: NES - Contra - Bill Rizer & Lance Bean_98
+  - first:
+      213: 21300198
+    second: NES - Contra - Bill Rizer & Lance Bean_99
+  - first:
+      213: 21300200
+    second: NES - Contra - Bill Rizer & Lance Bean_100
+  - first:
+      213: 21300202
+    second: NES - Contra - Bill Rizer & Lance Bean_101
+  - first:
+      213: 21300204
+    second: NES - Contra - Bill Rizer & Lance Bean_102
+  - first:
+      213: 21300206
+    second: NES - Contra - Bill Rizer & Lance Bean_103
+  - first:
+      213: 21300208
+    second: NES - Contra - Bill Rizer & Lance Bean_104
+  - first:
+      213: 21300210
+    second: NES - Contra - Bill Rizer & Lance Bean_105
+  - first:
+      213: 21300212
+    second: NES - Contra - Bill Rizer & Lance Bean_106
+  - first:
+      213: 21300214
+    second: NES - Contra - Bill Rizer & Lance Bean_107
+  - first:
+      213: 21300216
+    second: NES - Contra - Bill Rizer & Lance Bean_108
+  - first:
+      213: 21300218
+    second: NES - Contra - Bill Rizer & Lance Bean_109
+  - first:
+      213: 21300220
+    second: NES - Contra - Bill Rizer & Lance Bean_110
+  - first:
+      213: 21300222
+    second: NES - Contra - Bill Rizer & Lance Bean_111
+  - first:
+      213: 21300224
+    second: NES - Contra - Bill Rizer & Lance Bean_112
+  - first:
+      213: 21300226
+    second: NES - Contra - Bill Rizer & Lance Bean_113
+  - first:
+      213: 21300228
+    second: NES - Contra - Bill Rizer & Lance Bean_114
+  - first:
+      213: 21300230
+    second: NES - Contra - Bill Rizer & Lance Bean_115
+  - first:
+      213: 21300232
+    second: NES - Contra - Bill Rizer & Lance Bean_116
+  - first:
+      213: 21300234
+    second: NES - Contra - Bill Rizer & Lance Bean_117
+  - first:
+      213: 21300236
+    second: NES - Contra - Bill Rizer & Lance Bean_118
+  - first:
+      213: 21300238
+    second: NES - Contra - Bill Rizer & Lance Bean_119
+  - first:
+      213: 21300240
+    second: NES - Contra - Bill Rizer & Lance Bean_120
+  - first:
+      213: 21300242
+    second: NES - Contra - Bill Rizer & Lance Bean_121
+  - first:
+      213: 21300244
+    second: NES - Contra - Bill Rizer & Lance Bean_122
+  - first:
+      213: 21300246
+    second: NES - Contra - Bill Rizer & Lance Bean_123
+  - first:
+      213: 21300248
+    second: NES - Contra - Bill Rizer & Lance Bean_124
+  - first:
+      213: 21300250
+    second: NES - Contra - Bill Rizer & Lance Bean_125
+  - first:
+      213: 21300252
+    second: NES - Contra - Bill Rizer & Lance Bean_126
+  - first:
+      213: 21300254
+    second: NES - Contra - Bill Rizer & Lance Bean_127
+  - first:
+      213: 21300256
+    second: NES - Contra - Bill Rizer & Lance Bean_128
+  - first:
+      213: 21300258
+    second: NES - Contra - Bill Rizer & Lance Bean_129
+  - first:
+      213: 21300260
+    second: NES - Contra - Bill Rizer & Lance Bean_130
+  - first:
+      213: 21300262
+    second: NES - Contra - Bill Rizer & Lance Bean_131
+  - first:
+      213: 21300264
+    second: NES - Contra - Bill Rizer & Lance Bean_132
+  - first:
+      213: 21300266
+    second: NES - Contra - Bill Rizer & Lance Bean_133
+  - first:
+      213: 21300268
+    second: NES - Contra - Bill Rizer & Lance Bean_134
+  - first:
+      213: 21300270
+    second: NES - Contra - Bill Rizer & Lance Bean_135
+  - first:
+      213: 21300272
+    second: NES - Contra - Bill Rizer & Lance Bean_136
+  - first:
+      213: 21300274
+    second: NES - Contra - Bill Rizer & Lance Bean_137
+  - first:
+      213: 21300276
+    second: NES - Contra - Bill Rizer & Lance Bean_138
+  - first:
+      213: 21300278
+    second: NES - Contra - Bill Rizer & Lance Bean_139
+  - first:
+      213: 21300280
+    second: NES - Contra - Bill Rizer & Lance Bean_140
+  - first:
+      213: 21300282
+    second: NES - Contra - Bill Rizer & Lance Bean_141
+  - first:
+      213: 21300284
+    second: NES - Contra - Bill Rizer & Lance Bean_142
   externalObjects: {}
-  serializedVersion: 9
+  serializedVersion: 10
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -234,14 +520,15 @@ TextureImporter:
         y: 486
         width: 14
         height: 42
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.52335113, y: 0.422162}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
       spriteID: 2d850e1569397824f9130f521783bbab
+      internalID: 21300000
       vertices: []
       indices: 
       edges: []
@@ -254,14 +541,15 @@ TextureImporter:
         y: 486
         width: 15
         height: 41
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.4362108}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
       spriteID: f7a467f825f4a2d4d863a2b5eb1da6ee
+      internalID: 21300002
       vertices: []
       indices: 
       edges: []
@@ -282,6 +570,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 6e0825c90e32ca04d9882ce5beed0b3d
+      internalID: 21300004
       vertices: []
       indices: 
       edges: []
@@ -302,6 +591,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 4e6445a87596bfe49a21a19c62b0962e
+      internalID: 21300006
       vertices: []
       indices: 
       edges: []
@@ -322,6 +612,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 121b95f5cc99c244d9a3e68c9e7e2abe
+      internalID: 21300008
       vertices: []
       indices: 
       edges: []
@@ -342,6 +633,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: ee771d50df17b914590935e278137549
+      internalID: 21300010
       vertices: []
       indices: 
       edges: []
@@ -362,6 +654,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: d2cf1a1283b80f844a87a711e8ed42e9
+      internalID: 21300012
       vertices: []
       indices: 
       edges: []
@@ -382,6 +675,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 5bacc96043114c745b835c12d4ca887f
+      internalID: 21300014
       vertices: []
       indices: 
       edges: []
@@ -402,6 +696,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 6a2c83b9874b03945b93483abd9ead0d
+      internalID: 21300016
       vertices: []
       indices: 
       edges: []
@@ -422,6 +717,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 88e36456bc9cadf4c9b9b5ef99aac7d8
+      internalID: 21300018
       vertices: []
       indices: 
       edges: []
@@ -442,6 +738,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 0eb921ed898aa9448a23bbfc3c3ee4c9
+      internalID: 21300020
       vertices: []
       indices: 
       edges: []
@@ -462,6 +759,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: c0319694d4d80c34cabf20faa45982ab
+      internalID: 21300022
       vertices: []
       indices: 
       edges: []
@@ -482,6 +780,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 9d464fb79bcc03040bec8ff3167dd91c
+      internalID: 21300024
       vertices: []
       indices: 
       edges: []
@@ -502,6 +801,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: aa9c260093a5eb645aecdab42ad6fd49
+      internalID: 21300026
       vertices: []
       indices: 
       edges: []
@@ -522,6 +822,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 7b6fccc7f1158ab43b9734c653550869
+      internalID: 21300028
       vertices: []
       indices: 
       edges: []
@@ -542,6 +843,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 687164c4aadb361488f79319424c3fdc
+      internalID: 21300030
       vertices: []
       indices: 
       edges: []
@@ -562,6 +864,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 3edea567abf88df45923d77ba63d52c3
+      internalID: 21300032
       vertices: []
       indices: 
       edges: []
@@ -582,6 +885,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: be2ef4ce4b327594f945df92a3768f65
+      internalID: 21300034
       vertices: []
       indices: 
       edges: []
@@ -602,6 +906,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: d7f1f60071ba1ea45966b3a3c91da958
+      internalID: 21300036
       vertices: []
       indices: 
       edges: []
@@ -614,14 +919,15 @@ TextureImporter:
         y: 487
         width: 32
         height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
       spriteID: e8456034bd6bce94d8182fd3e757677b
+      internalID: 21300038
       vertices: []
       indices: 
       edges: []
@@ -634,14 +940,15 @@ TextureImporter:
         y: 486
         width: 32
         height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
       spriteID: c914b963092e3bd4a9f1f3db9d2f1035
+      internalID: 21300040
       vertices: []
       indices: 
       edges: []
@@ -662,6 +969,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 624573c3fdf737045a58e4f4e329680c
+      internalID: 21300042
       vertices: []
       indices: 
       edges: []
@@ -682,6 +990,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: beffdbe0c49b5484f8b1a2fe53661ff2
+      internalID: 21300044
       vertices: []
       indices: 
       edges: []
@@ -702,6 +1011,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: f1fa8d363d6f46a41a367625d68602a4
+      internalID: 21300046
       vertices: []
       indices: 
       edges: []
@@ -722,6 +1032,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 6569c0aaebd567a40b1f2eac603263e5
+      internalID: 21300048
       vertices: []
       indices: 
       edges: []
@@ -742,6 +1053,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 12f1bca74e53eab4e8b573c8d59efe5f
+      internalID: 21300050
       vertices: []
       indices: 
       edges: []
@@ -762,6 +1074,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 3d67b4a2ac03621468eadb938a553b45
+      internalID: 21300052
       vertices: []
       indices: 
       edges: []
@@ -782,6 +1095,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 0435d3fddbf26d542a08eb0fb5139fc3
+      internalID: 21300054
       vertices: []
       indices: 
       edges: []
@@ -802,6 +1116,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 3c6a53d7d92e9704985f6324d1641ea2
+      internalID: 21300056
       vertices: []
       indices: 
       edges: []
@@ -822,6 +1137,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 57f471eb539628f44969ff4ec0da3c37
+      internalID: 21300058
       vertices: []
       indices: 
       edges: []
@@ -842,6 +1158,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 66a5327baef72dc4a9173ace2a458c12
+      internalID: 21300060
       vertices: []
       indices: 
       edges: []
@@ -862,6 +1179,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 1df5f4a25d512984cb2413a0b1a113ba
+      internalID: 21300062
       vertices: []
       indices: 
       edges: []
@@ -882,6 +1200,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 68e6afee5890e7640a12cd20aa691e9d
+      internalID: 21300064
       vertices: []
       indices: 
       edges: []
@@ -902,6 +1221,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 81812fc56494fb949a712786e351923a
+      internalID: 21300066
       vertices: []
       indices: 
       edges: []
@@ -922,6 +1242,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 263941bbb7c94e249983847c22a3416e
+      internalID: 21300068
       vertices: []
       indices: 
       edges: []
@@ -942,6 +1263,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 85dd2b74d0702b14ab89e68fc16c8102
+      internalID: 21300070
       vertices: []
       indices: 
       edges: []
@@ -962,6 +1284,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 1349559bd24bb304d8dae129c071892f
+      internalID: 21300072
       vertices: []
       indices: 
       edges: []
@@ -982,6 +1305,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: be421aa7515bc774a8ce62d9a2cd64a4
+      internalID: 21300074
       vertices: []
       indices: 
       edges: []
@@ -1002,6 +1326,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 53f107aa502b7394194fea6f43f6ffec
+      internalID: 21300076
       vertices: []
       indices: 
       edges: []
@@ -1022,6 +1347,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 7ac25c8282850e843b91868a2f25db92
+      internalID: 21300078
       vertices: []
       indices: 
       edges: []
@@ -1042,6 +1368,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 4f32f5a121a600047842d29147341bf3
+      internalID: 21300080
       vertices: []
       indices: 
       edges: []
@@ -1062,6 +1389,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: c0016cdf23cb11c488ddd035b810b854
+      internalID: 21300082
       vertices: []
       indices: 
       edges: []
@@ -1082,6 +1410,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 13e6d1e4e214f234f82bbfb341c10c09
+      internalID: 21300084
       vertices: []
       indices: 
       edges: []
@@ -1102,6 +1431,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 2795d86c2d0c6074d92d335e5a7320bc
+      internalID: 21300086
       vertices: []
       indices: 
       edges: []
@@ -1122,6 +1452,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 9921f621bf2da1c4b99759d9951a7c2e
+      internalID: 21300088
       vertices: []
       indices: 
       edges: []
@@ -1142,6 +1473,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: c418ff6b029eec547a33345153f99316
+      internalID: 21300090
       vertices: []
       indices: 
       edges: []
@@ -1162,6 +1494,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 144d9c1bb84fdfa4eac403aad10543c9
+      internalID: 21300092
       vertices: []
       indices: 
       edges: []
@@ -1182,6 +1515,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 7c6d0a5bd9a2ee54f85e98120f020250
+      internalID: 21300094
       vertices: []
       indices: 
       edges: []
@@ -1202,6 +1536,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 04e2585f2e441e14c849bc8fc2769ef4
+      internalID: 21300096
       vertices: []
       indices: 
       edges: []
@@ -1222,6 +1557,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: bcaa608c83a262e449509db29b73902d
+      internalID: 21300098
       vertices: []
       indices: 
       edges: []
@@ -1242,6 +1578,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 70c76c172962cf845bfb077fcb1fb4bb
+      internalID: 21300100
       vertices: []
       indices: 
       edges: []
@@ -1262,6 +1599,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: bba9455608e706a4193bee6f671e21cb
+      internalID: 21300102
       vertices: []
       indices: 
       edges: []
@@ -1282,6 +1620,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 75e6f1e0a4587c1479e484101080174d
+      internalID: 21300104
       vertices: []
       indices: 
       edges: []
@@ -1302,6 +1641,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: bf02218657aec13419e0857e021d7f65
+      internalID: 21300106
       vertices: []
       indices: 
       edges: []
@@ -1322,6 +1662,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 810830b86fc42bb4ab6dd4a71c526377
+      internalID: 21300108
       vertices: []
       indices: 
       edges: []
@@ -1342,6 +1683,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: fb8c76f4fc3c7b14f800c379dadfeb4a
+      internalID: 21300110
       vertices: []
       indices: 
       edges: []
@@ -1362,6 +1704,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 3832b8931a3cd214cba93ca7ac53327b
+      internalID: 21300112
       vertices: []
       indices: 
       edges: []
@@ -1382,6 +1725,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 90f6b2d7fc50443448f852693659ddd3
+      internalID: 21300114
       vertices: []
       indices: 
       edges: []
@@ -1402,6 +1746,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 27842661a22e04648a7cf688b557cb32
+      internalID: 21300116
       vertices: []
       indices: 
       edges: []
@@ -1422,6 +1767,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 40b9ec972df8cfe428b037a308da79e4
+      internalID: 21300118
       vertices: []
       indices: 
       edges: []
@@ -1442,6 +1788,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: b8f7a404ebe58db47af12eafebb9235e
+      internalID: 21300120
       vertices: []
       indices: 
       edges: []
@@ -1462,6 +1809,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 3cf7ca0963f65fe4a92b9cead88d2c90
+      internalID: 21300122
       vertices: []
       indices: 
       edges: []
@@ -1482,6 +1830,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: e606b88af2cc0774c9abd75255ad2863
+      internalID: 21300124
       vertices: []
       indices: 
       edges: []
@@ -1502,6 +1851,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: a826ba9fc553e70449127434cdcdc246
+      internalID: 21300126
       vertices: []
       indices: 
       edges: []
@@ -1522,6 +1872,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: b7d48c0762ac0074f8187013ef4b6aab
+      internalID: 21300128
       vertices: []
       indices: 
       edges: []
@@ -1542,6 +1893,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: bdb43d3003c59254fbf78d32a9594289
+      internalID: 21300130
       vertices: []
       indices: 
       edges: []
@@ -1562,6 +1914,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 4002a62fff6cc1341956adc70d1ae58d
+      internalID: 21300132
       vertices: []
       indices: 
       edges: []
@@ -1582,6 +1935,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: c7498e6b1b6d58c4bbc94f6e594f1622
+      internalID: 21300134
       vertices: []
       indices: 
       edges: []
@@ -1602,6 +1956,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: dbe01c5f601ea5b45a276d6b42f9f6dd
+      internalID: 21300136
       vertices: []
       indices: 
       edges: []
@@ -1622,6 +1977,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 29da23dd18cd6a44c88b144f01b6e98f
+      internalID: 21300138
       vertices: []
       indices: 
       edges: []
@@ -1642,6 +1998,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 6ab47db70c18ae040850f2a7224f9088
+      internalID: 21300140
       vertices: []
       indices: 
       edges: []
@@ -1662,6 +2019,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: d958db7c8c6defe4d936dad2f631f8d0
+      internalID: 21300142
       vertices: []
       indices: 
       edges: []
@@ -1682,6 +2040,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: a30994ae93071f543ab97fe9d101efa8
+      internalID: 21300144
       vertices: []
       indices: 
       edges: []
@@ -1702,6 +2061,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 9d7882bcd8df44f42a34d83617aad6a5
+      internalID: 21300146
       vertices: []
       indices: 
       edges: []
@@ -1722,6 +2082,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: b9fbcfcdbfad00f4e8fc8562eca842f8
+      internalID: 21300148
       vertices: []
       indices: 
       edges: []
@@ -1742,6 +2103,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 85a3eda2ba21fe34daf5a99a6d099942
+      internalID: 21300150
       vertices: []
       indices: 
       edges: []
@@ -1762,6 +2124,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: ee53f9256eee51747a90780659ee2b8f
+      internalID: 21300152
       vertices: []
       indices: 
       edges: []
@@ -1782,6 +2145,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 0df93551055a2104dbe145209b56335e
+      internalID: 21300154
       vertices: []
       indices: 
       edges: []
@@ -1802,6 +2166,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: f1015e04df5d02946bf560053993c99d
+      internalID: 21300156
       vertices: []
       indices: 
       edges: []
@@ -1822,6 +2187,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 44e8a4abca8f61a4981b3d0885b5724e
+      internalID: 21300158
       vertices: []
       indices: 
       edges: []
@@ -1842,6 +2208,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 05705016352bcf94894bb2961f208ee5
+      internalID: 21300160
       vertices: []
       indices: 
       edges: []
@@ -1862,6 +2229,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: d1e27f8ec4bc78243a8d08e2eccfe0d6
+      internalID: 21300162
       vertices: []
       indices: 
       edges: []
@@ -1882,6 +2250,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 000efb9565588d14e98c95486af54fc2
+      internalID: 21300164
       vertices: []
       indices: 
       edges: []
@@ -1902,6 +2271,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 31233682bd202c44d9f173183b81c08d
+      internalID: 21300166
       vertices: []
       indices: 
       edges: []
@@ -1922,6 +2292,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 5707f3bcf98d9bc40bc97311104d0ea8
+      internalID: 21300168
       vertices: []
       indices: 
       edges: []
@@ -1942,6 +2313,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 304c936a1fe56eb489745d63ff0e4718
+      internalID: 21300170
       vertices: []
       indices: 
       edges: []
@@ -1962,6 +2334,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 972e51a11f9d43d479ef5d5c43f63999
+      internalID: 21300172
       vertices: []
       indices: 
       edges: []
@@ -1982,6 +2355,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: b63d9716370314e44984acaeaf2e23e0
+      internalID: 21300174
       vertices: []
       indices: 
       edges: []
@@ -2002,6 +2376,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 5481adc77955d2d4fb893af7eecc2ee5
+      internalID: 21300176
       vertices: []
       indices: 
       edges: []
@@ -2022,6 +2397,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: d5d00351fc644e74ebfe415e85c9aa32
+      internalID: 21300178
       vertices: []
       indices: 
       edges: []
@@ -2042,6 +2418,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 318eb0aa44d5e0c4eb21b17064459c6b
+      internalID: 21300180
       vertices: []
       indices: 
       edges: []
@@ -2062,6 +2439,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 575edbd038d750943953306f68e4bb01
+      internalID: 21300182
       vertices: []
       indices: 
       edges: []
@@ -2082,6 +2460,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: ede2f401d08e07d40a13fd11e9dab5ba
+      internalID: 21300184
       vertices: []
       indices: 
       edges: []
@@ -2102,6 +2481,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: e6b928fdb82b07f419de817b1f445b58
+      internalID: 21300186
       vertices: []
       indices: 
       edges: []
@@ -2122,6 +2502,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: f34a0242a0c4b2249abe1547f611c4ab
+      internalID: 21300188
       vertices: []
       indices: 
       edges: []
@@ -2142,6 +2523,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 56c0b86e5e0f3d142bc5e6e9243bb8f0
+      internalID: 21300190
       vertices: []
       indices: 
       edges: []
@@ -2162,6 +2544,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 70a2977cac9502a41af0e2a1e993215e
+      internalID: 21300192
       vertices: []
       indices: 
       edges: []
@@ -2182,6 +2565,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 126f1afba435cf44482f25f9f792760b
+      internalID: 21300194
       vertices: []
       indices: 
       edges: []
@@ -2202,6 +2586,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 7016c1e307765c14a9a5d9dabd95b3dd
+      internalID: 21300196
       vertices: []
       indices: 
       edges: []
@@ -2222,6 +2607,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 942401df3ebdf1c4c8bad7ebc20ea071
+      internalID: 21300198
       vertices: []
       indices: 
       edges: []
@@ -2242,6 +2628,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: a534d39ef09b6074193746ec10f26520
+      internalID: 21300200
       vertices: []
       indices: 
       edges: []
@@ -2262,6 +2649,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 62a580f3aaea6f241857f4da80628745
+      internalID: 21300202
       vertices: []
       indices: 
       edges: []
@@ -2282,6 +2670,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 3ba98aaf5c1a4144b9140f6f9ff90d69
+      internalID: 21300204
       vertices: []
       indices: 
       edges: []
@@ -2302,6 +2691,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 159947de3bcd03143a32c8c2f2817d0c
+      internalID: 21300206
       vertices: []
       indices: 
       edges: []
@@ -2322,6 +2712,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 0acb14ab02e386b47ade15703a02aa0c
+      internalID: 21300208
       vertices: []
       indices: 
       edges: []
@@ -2342,6 +2733,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: c39a4534aef7b3645859cbba542744b5
+      internalID: 21300210
       vertices: []
       indices: 
       edges: []
@@ -2362,6 +2754,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 2c3dfc3ed11148648af3f8591e661e60
+      internalID: 21300212
       vertices: []
       indices: 
       edges: []
@@ -2382,6 +2775,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 09746e97a5f6ef741bb7bdb79b8d84df
+      internalID: 21300214
       vertices: []
       indices: 
       edges: []
@@ -2402,6 +2796,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 9549f22677a1abc4b96ec2d8c4d463af
+      internalID: 21300216
       vertices: []
       indices: 
       edges: []
@@ -2422,6 +2817,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: f2e14e27b99c0844a985d574ac633c4d
+      internalID: 21300218
       vertices: []
       indices: 
       edges: []
@@ -2442,6 +2838,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: f27eb061f365e60449640d42891461b5
+      internalID: 21300220
       vertices: []
       indices: 
       edges: []
@@ -2462,6 +2859,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: bb3caedcf5b5e234286641fd55245318
+      internalID: 21300222
       vertices: []
       indices: 
       edges: []
@@ -2482,6 +2880,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 9eb70f02b4499de43a7050ddd7592787
+      internalID: 21300224
       vertices: []
       indices: 
       edges: []
@@ -2502,6 +2901,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 42efad9bbce38ae41889c91b8dc8bcd8
+      internalID: 21300226
       vertices: []
       indices: 
       edges: []
@@ -2522,6 +2922,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 426f79084e584d94e9a9fc284db5d9c2
+      internalID: 21300228
       vertices: []
       indices: 
       edges: []
@@ -2542,6 +2943,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: d1927e5b99e80284084d797f15801663
+      internalID: 21300230
       vertices: []
       indices: 
       edges: []
@@ -2562,6 +2964,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: a61f25bdaff73064fab2beaab40cecb0
+      internalID: 21300232
       vertices: []
       indices: 
       edges: []
@@ -2582,6 +2985,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 31e7724222f2f044fb6c49f19b844332
+      internalID: 21300234
       vertices: []
       indices: 
       edges: []
@@ -2602,6 +3006,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: cabd9415c8e899141b6987e58358c0b5
+      internalID: 21300236
       vertices: []
       indices: 
       edges: []
@@ -2622,6 +3027,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: f6c4c3246381e244fa9a8c5826ab4134
+      internalID: 21300238
       vertices: []
       indices: 
       edges: []
@@ -2642,6 +3048,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 273070596a2338f4fbb689190d44744d
+      internalID: 21300240
       vertices: []
       indices: 
       edges: []
@@ -2662,6 +3069,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 4ef0784612fa4b141b009cd3e1535cfd
+      internalID: 21300242
       vertices: []
       indices: 
       edges: []
@@ -2682,6 +3090,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: b5e82a7edfb2ee644b5a9670c812b115
+      internalID: 21300244
       vertices: []
       indices: 
       edges: []
@@ -2702,6 +3111,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 0ae934ed982b8774c83a136b82269a05
+      internalID: 21300246
       vertices: []
       indices: 
       edges: []
@@ -2722,6 +3132,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: ad6421781ecc8a844a6d06be1692c4c5
+      internalID: 21300248
       vertices: []
       indices: 
       edges: []
@@ -2742,6 +3153,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: b9dca02c02dfea64dbccd8d0c09b2970
+      internalID: 21300250
       vertices: []
       indices: 
       edges: []
@@ -2762,6 +3174,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 4745c5d1744d0c9478e1d308789994fd
+      internalID: 21300252
       vertices: []
       indices: 
       edges: []
@@ -2782,6 +3195,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 0f39a6083e698ce4a846b418268e35c4
+      internalID: 21300254
       vertices: []
       indices: 
       edges: []
@@ -2802,6 +3216,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: bafa507493c74a64ebc5641930fafe73
+      internalID: 21300256
       vertices: []
       indices: 
       edges: []
@@ -2822,6 +3237,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 0e147fae2361dc648aa0e5766b4c7c60
+      internalID: 21300258
       vertices: []
       indices: 
       edges: []
@@ -2842,6 +3258,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 83cba8f1b6b213e4ea8cb3113e150666
+      internalID: 21300260
       vertices: []
       indices: 
       edges: []
@@ -2862,6 +3279,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 83519e43fd4c27f4ebcc6872204d6497
+      internalID: 21300262
       vertices: []
       indices: 
       edges: []
@@ -2882,6 +3300,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: f3ec063fc25af17408014649db2eb640
+      internalID: 21300264
       vertices: []
       indices: 
       edges: []
@@ -2902,6 +3321,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 1c42710fa4406f14ba7b493d1e032692
+      internalID: 21300266
       vertices: []
       indices: 
       edges: []
@@ -2922,6 +3342,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 9a75af7588c93bf4c9347e106b85ed5e
+      internalID: 21300268
       vertices: []
       indices: 
       edges: []
@@ -2942,6 +3363,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: a52134328565ca74ba10eae7d14ffd28
+      internalID: 21300270
       vertices: []
       indices: 
       edges: []
@@ -2962,6 +3384,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 7a76b796d2f79784aa43658ef9f0a0d6
+      internalID: 21300272
       vertices: []
       indices: 
       edges: []
@@ -2982,6 +3405,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 0c18ab0840a95ee4386de10bfd8c1e21
+      internalID: 21300274
       vertices: []
       indices: 
       edges: []
@@ -3002,6 +3426,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 9a29719adc861fc40bd6dd4ce362f586
+      internalID: 21300276
       vertices: []
       indices: 
       edges: []
@@ -3022,6 +3447,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: b576a731a5123904db2f5f3e89fffc72
+      internalID: 21300278
       vertices: []
       indices: 
       edges: []
@@ -3042,6 +3468,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 596589a97a23b1a49b824502c333fdca
+      internalID: 21300280
       vertices: []
       indices: 
       edges: []
@@ -3062,6 +3489,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 7b2219cab0f5520409d88a65e850ac1c
+      internalID: 21300282
       vertices: []
       indices: 
       edges: []
@@ -3082,6 +3510,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 326d8a23cdbd99f408ef81d3f3616ed5
+      internalID: 21300284
       vertices: []
       indices: 
       edges: []
@@ -3090,10 +3519,12 @@ TextureImporter:
     physicsShape: []
     bones: []
     spriteID: 44d9cd784c114ef4fb66d84ed00b4818
+    internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
+    secondaryTextures: []
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

@@ -35,6 +35,45 @@ public class PlayerController : Actor
         }
     }
 
+    public override void startShooting()
+    {
+        animator.SetBool("isShooting", true);
+        base.startShooting();
+    }
+
+    public override void endShoot()
+    {
+        animator.SetBool("isShooting", false);
+        base.endShoot();
+    }
+
+    protected override void updateShootDirection()
+    {
+        //update shoot direction
+        if (Input.GetKey(KeyCode.D))
+        {
+            shootDirection.x = 1;
+        }
+        else if (Input.GetKey(KeyCode.A))
+        {
+            shootDirection.x = -1;
+        }
+
+        if (Input.GetKey(KeyCode.W))
+        {
+            shootDirection.y = 1;
+        }
+        if (Input.GetKey(KeyCode.S))
+        {
+            shootDirection.y = -1;
+        }
+        if (Input.GetKeyUp(KeyCode.S) || Input.GetKeyUp(KeyCode.W))
+        {
+            shootDirection.y = 0;
+        }
+        animator.SetInteger("aimY", (int)shootDirection.y);
+    }
+
     protected override void ComputeVelocity()
     {
         Vector2 move = Vector2.zero;
@@ -61,29 +100,6 @@ public class PlayerController : Actor
 
         animator.SetBool("grounded", grounded);
         animator.SetFloat("velocityX", Mathf.Abs(velocity.x) / maxSpeed);
-
-        //update shoot direction
-        if(move.x > 0.01f)
-        {
-            shootDirection.x = 1;
-        }
-        else if(move.x < -0.01f)
-        {
-            shootDirection.x = -1;
-        }
-
-        if (Input.GetKey(KeyCode.W))
-        {
-            shootDirection.y = 1;
-        }
-        if (Input.GetKey(KeyCode.S))
-        {
-            shootDirection.y = -1;
-        }
-        if (Input.GetKeyUp(KeyCode.S) || Input.GetKeyUp(KeyCode.W))
-        {
-            shootDirection.y = 0;
-        }
 
         targetVelocity = move * maxSpeed;
     }
