@@ -15,6 +15,7 @@ public class BasicGun : Gun
         if (timeStamp <= Time.time)
         {
             Debug.Log("Player Shoot");
+            
             timeStamp = Time.time + fireRate;
         }
     }
