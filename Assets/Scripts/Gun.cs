@@ -8,6 +8,9 @@ public abstract class Gun
     protected float timeStamp = Time.time;
     protected bool shooting = false;
     protected Actor owner;
+    protected GameObject bulletTypePrefab;
+    protected float bulletFireSpeed;
+    protected List<Bullet> bulletList;
 
     public Gun(Actor obj)
     {

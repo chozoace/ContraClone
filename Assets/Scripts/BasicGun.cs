@@ -7,7 +7,9 @@ public class BasicGun : Gun
 
     public BasicGun(Actor obj) : base(obj)
     {
-        fireRate = 0.5f;
+        fireRate = 0.2f;
+        bulletTypePrefab = Resources.Load("Prefabs/Bullets/BasicBullet") as GameObject;
+        this.bulletFireSpeed = 3.0f;
     }
 
     public override void shoot(Vector2 shootDirection)
@@ -15,6 +17,9 @@ public class BasicGun : Gun
         if (timeStamp <= Time.time)
         {
             Debug.Log("Player Shoot");
+
+            GameObject bullet = Object.Instantiate(bulletTypePrefab, owner.transform.position, Quaternion.identity);
+            bullet.GetComponent<Rigidbody2D>().velocity = shootDirection * bulletFireSpeed;
             
             timeStamp = Time.time + fireRate;
         }

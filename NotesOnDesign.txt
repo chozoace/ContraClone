@@ -2,7 +2,6 @@
 Actor
 	Player
 	Enemy
-	
 
 Manage States
 Take input vs. Adhere to AI
@@ -29,3 +28,12 @@ Action (Just execute) does not include movement
 -Jump
 -Shoot
 -death?
+
+
+Ok whats next
+Bullets 
+	-onCollide(collider)
+Actor
+	-takeDamage()
+
+EnemySpawner
