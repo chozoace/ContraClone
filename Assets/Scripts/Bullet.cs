@@ -5,6 +5,7 @@ using UnityEngine;
 public class Bullet : MonoBehaviour
 {
     protected bool exists;
+    public bool Exists { get { return exists; } }
     protected SpriteRenderer renderer;
     protected Rigidbody2D rigidbody2D;
 
@@ -20,12 +21,21 @@ public class Bullet : MonoBehaviour
        // Destroy(this.gameObject);
     }
 
+    public void ReuseBullet(Vector2 newPosition, int damage, Vector2 speedVector)
+    {
+        exists = true;
+        renderer.enabled = true;
+        transform.position = newPosition;
+        //this.gameObject.layer = 12;
+        //InitializeStats(damage, speedVector);
+    }
+
     private void OnBecameInvisible()
     {
         disableBullet();
     }
 
-    void disableBullet()
+    private void disableBullet()
     {
         exists = false;
         renderer.enabled = false;

@@ -49,28 +49,11 @@ public class PlayerController : Actor
 
     protected override void updateShootDirection()
     {
-        //update shoot direction
-        if (Input.GetKey(KeyCode.D))
+        if (Input.GetAxisRaw("Horizontal") != 0)
         {
-            shootDirection.x = 1;
+            shootDirection.x = Input.GetAxisRaw("Horizontal");
         }
-        else if (Input.GetKey(KeyCode.A))
-        {
-            shootDirection.x = -1;
-        }
-
-        if (Input.GetKey(KeyCode.W))
-        {
-            shootDirection.y = 1;
-        }
-        if (Input.GetKey(KeyCode.S))
-        {
-            shootDirection.y = -1;
-        }
-        if (Input.GetKeyUp(KeyCode.S) || Input.GetKeyUp(KeyCode.W))
-        {
-            shootDirection.y = 0;
-        }
+        shootDirection.y = Input.GetAxisRaw("Vertical");
         animator.SetInteger("aimY", (int)shootDirection.y);
     }
 

@@ -16,8 +16,6 @@ public class BasicGun : Gun
     {
         if (timeStamp <= Time.time)
         {
-            Debug.Log("Player Shoot");
-
             GameObject bullet = Object.Instantiate(bulletTypePrefab, owner.transform.position, Quaternion.identity);
             bullet.GetComponent<Rigidbody2D>().velocity = shootDirection * bulletFireSpeed;
             
