@@ -10,16 +10,16 @@ public abstract class Gun
     protected Actor owner;
     protected GameObject bulletTypePrefab;
     protected float bulletFireSpeed;
-    protected List<Bullet> bulletList;
+    protected List<Bullet> bulletList = new List<Bullet>();
 
     public Gun(Actor obj)
     {
         owner = obj;
     }
 
-    public abstract void shoot(Vector2 shootDirection);
+    public abstract void shoot(Vector2 shootOrigin, Vector2 shootDirection);
     public void startShooting() { shooting = true; }
     public void stopShooting() { shooting = false; }
 
-    public void updateShooting() { if(shooting) shoot(owner.ShootDirection); }
+    public void updateShooting() { if(shooting) shoot(owner.ShootOrigin, owner.ShootDirection); }
 }
