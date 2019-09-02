@@ -21,5 +21,8 @@ public abstract class Gun
     public void startShooting() { shooting = true; }
     public void stopShooting() { shooting = false; }
 
+    //bug happens with steps:
+    //1. shoot up
+    //2. let go of up but keep shoot held
     public void updateShooting() { if(shooting) shoot(owner.ShootOrigin, owner.ShootDirection); }
 }
