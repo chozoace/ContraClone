@@ -7,8 +7,8 @@ public class LevelController : MonoBehaviour
     //This controller will change according to scene
     //This is really more of a scene controller
     private WorldGrid worldGrid;
-    private float sceneWidth;
-    private float sceneHeight;
+    [SerializeField] GameObject topLeftPosition;
+    [SerializeField] GameObject bottomRightPosition;
 
     //Use scene specific data to create the world grid
     //level controller only updates active partitions
@@ -17,7 +17,9 @@ public class LevelController : MonoBehaviour
     //https://www.habrador.com/tutorials/programming-patterns/19-spatial-partition-pattern/
     public void Start()
     {
-        sceneWidth = GameObject.FindGameObjectWithTag("LevelEnd").transform.position.x;
+        worldGrid = new WorldGrid();
+        worldGrid.CreateGrid(topLeftPosition.transform.position,
+            bottomRightPosition.transform.position);
     }
 
     public void CreateWorld()

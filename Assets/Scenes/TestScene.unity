@@ -321,7 +321,7 @@ Transform:
   m_LocalScale: {x: 1.2104664, y: 0.10958162, z: 0.57722}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &895463498
 GameObject:
@@ -333,8 +333,8 @@ GameObject:
   m_Component:
   - component: {fileID: 895463499}
   m_Layer: 0
-  m_Name: LevelEnd
-  m_TagString: Untagged
+  m_Name: LevelGridEnd
+  m_TagString: LevelGridEnd
   m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -347,11 +347,41 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 895463498}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 14.454, y: -0.937, z: -63.871136}
+  m_LocalPosition: {x: 14.61, y: -2.3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1065025810
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1065025811}
+  m_Layer: 0
+  m_Name: LevelGridStart
+  m_TagString: LevelGridStart
+  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1065025811
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1065025810}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -3.05, y: 3.71, z: -8.626953}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1088015860
 GameObject:
@@ -381,7 +411,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1127318076
 GameObject:
@@ -487,7 +517,7 @@ Transform:
   m_LocalScale: {x: 1.5644419, y: 0.08789, z: 0.08789}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1164541623
 GameObject:
@@ -748,7 +778,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1292619362
 GameObject:
@@ -850,11 +880,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1292619362}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.04, y: 0.16, z: -0.019244}
+  m_LocalPosition: {x: 6.29, y: 0.16, z: -0.019244}
   m_LocalScale: {x: 1.2104664, y: 0.10958162, z: 0.57722}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1334726842
 GameObject:
@@ -1039,7 +1069,7 @@ Transform:
   m_LocalScale: {x: 1.2104664, y: 0.10958162, z: 0.57722}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1605943485
 GameObject:
@@ -1176,7 +1206,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1647786367
 MonoBehaviour:
@@ -1190,6 +1220,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f0629b3bf328b944b1fb1fee3b5ec2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  topLeftPosition: {fileID: 1065025810}
+  bottomRightPosition: {fileID: 895463498}
 --- !u!1 &1677393169
 GameObject:
   m_ObjectHideFlags: 0
@@ -1294,5 +1326,5 @@ Transform:
   m_LocalScale: {x: 4.468323, y: 0.10958162, z: 0.57722}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}

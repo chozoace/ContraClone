@@ -6,20 +6,34 @@ public class WorldGrid
 {
     private Partition[,] partitions;
     private float gridWidth;
+    private float gridHeight;
     private float partitionWidth;
     private float partitionHeight;
+    private Vector2 gridOffset;
 
-    //Orthographic size means how many units in world space the viewport half height is
-
-    public void Start()
+    public WorldGrid()
     {
-        partitionHeight = Camera.main.orthographicSize * 2;
-        partitionWidth = partitionHeight * Screen.width / Screen.height;
+        partitionHeight =(Camera.main.orthographicSize * 2) + 1;
+        partitionWidth = (Camera.main.orthographicSize * 2 * Camera.main.aspect) + 1;
     }
 
-    public void CreatePartitions()
+    public void CreateGrid(Vector2 topLeftCorner, Vector2 bottomRightCorner)
     {
+        gridOffset = topLeftCorner;
+        gridWidth = Mathf.Abs(bottomRightCorner.x - topLeftCorner.x);
+        gridHeight = Mathf.Abs(bottomRightCorner.y - topLeftCorner.y);
 
+        partitions = new Partition[(int)Mathf.Ceil(gridWidth / partitionWidth),
+            (int)Mathf.Ceil(gridHeight / partitionHeight)];
+
+        for (int i = 0; i < partitions.GetLength(0); i++)
+        {
+            for(int j = 0; j < partitions.GetLength(1); j++)
+            {
+                partitions[i, j] = new Partition();
+            }
+        }        
     }
+    
 
 }
