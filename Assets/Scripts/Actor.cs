@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Actor : PhysicsObject
+public class Actor : MonoBehaviour
 {
     protected SpriteRenderer spriteRenderer;
     protected Animator animator;
@@ -38,16 +38,14 @@ public class Actor : PhysicsObject
             canShoot = true;
         }
     }
-
     protected virtual void updateShootDirection()
     {
 
     }
 
-    protected override void Update()
+    public virtual void Update()
     {
         updateShootDirection();
         equippedGun.updateShooting();
-        base.Update();
     }
 }

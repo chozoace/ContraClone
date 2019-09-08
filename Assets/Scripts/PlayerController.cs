@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerController : Actor
+public class PlayerController : Actor, IPhysics
 {
     public float maxSpeed = 7;
     public float jumpTakeOffSpeed = 7;
@@ -15,10 +15,10 @@ public class PlayerController : Actor
         shootDirection.x = 1;
     }
 
-    protected override void Update()
+    public override void Update()
     {
-       handleInput();
-       base.Update();
+        handleInput();
+        base.Update();
     }
 
     void handleInput()
@@ -51,15 +51,16 @@ public class PlayerController : Actor
             shootOrigin = new Vector2(.06f * Input.GetAxisRaw("Horizontal"), 0);
         }
         //crouching shooting
-        if (Input.GetAxisRaw("Vertical") == -1 && this.velocity.x == 0)
+        if (Input.GetAxisRaw("Vertical") == -1 && GetPhysicsObject().Velocity.x == 0)
         {
             shootDirection.y = 0;
             shootOrigin = new Vector2(0, -0.08f);
         }
+
         animator.SetInteger("aimY", (int)Input.GetAxisRaw("Vertical"));
     }
 
-    protected override void ComputeVelocity()
+    public Vector2 ComputeVelocity(Vector2 velocity, bool grounded)
     {
         Vector2 move = Vector2.zero;
 
@@ -86,6 +87,11 @@ public class PlayerController : Actor
         animator.SetBool("grounded", grounded);
         animator.SetFloat("velocityX", Mathf.Abs(velocity.x) / maxSpeed);
 
-        targetVelocity = move * maxSpeed;
+        return new Vector2(move.x * maxSpeed, velocity.y);
+    }
+
+    public PhysicsObject GetPhysicsObject()
+    {
+        return GetComponent<PhysicsObject>();
     }
 }
