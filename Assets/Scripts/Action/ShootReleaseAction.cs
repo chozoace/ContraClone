@@ -5,6 +5,6 @@ public class ShootReleaseAction : Action
 {
     public void execute(Actor actor)
     {
-        actor.endShoot();
+        actor.EndShooting();
     }
 }

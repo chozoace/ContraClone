@@ -6,7 +6,7 @@ public class ShootPressAction : Action
 {
     public void execute(Actor actor)
     {
-        actor.startShooting();
+        actor.StartShooting();
     }
 }
 

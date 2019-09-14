@@ -11,6 +11,7 @@ public class PlayerController : Actor, IPhysics
     {
         base.Awake();
         this.equippedGun = new BasicGun(this);
+        this.inputHandler = new PlayerInputHandler();
 
         shootDirection.x = 1;
     }
@@ -23,14 +24,14 @@ public class PlayerController : Actor, IPhysics
 
     void handleInput()
     {
-        Action action = InputHandler.Instance().handleInput();
+        Action action = inputHandler.HandleInput();
         if(action != null)
         {
             action.execute(this);
         }
     }
 
-    protected override void updateShootDirection()
+    protected override void UpdateShootDirection()
     {
         //This is temporary until I figure out a way to determine shoot origin based on state of Actor
         shootOrigin = Vector2.zero;

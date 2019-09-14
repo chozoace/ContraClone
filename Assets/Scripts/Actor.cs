@@ -2,10 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Actor : MonoBehaviour
+public class Actor : MonoBehaviour, IShooter
 {
     protected SpriteRenderer spriteRenderer;
     protected Animator animator;
+    protected IInputHandler inputHandler;
     
     protected Gun equippedGun;
     protected bool canShoot = true;
@@ -20,7 +21,7 @@ public class Actor : MonoBehaviour
         animator = this.gameObject.GetComponent<Animator>();
     }
 
-    public virtual void startShooting()
+    public void StartShooting()
     {
         animator.SetBool("isShooting", true);
         if (canShoot)
@@ -29,7 +30,7 @@ public class Actor : MonoBehaviour
             canShoot = false;
         }
     }
-    public virtual void endShoot()
+    public void EndShooting()
     {
         animator.SetBool("isShooting", false);
         if (canShoot == false)
@@ -38,14 +39,14 @@ public class Actor : MonoBehaviour
             canShoot = true;
         }
     }
-    protected virtual void updateShootDirection()
+    protected virtual void UpdateShootDirection()
     {
 
     }
 
     public virtual void Update()
     {
-        updateShootDirection();
+        UpdateShootDirection();
         equippedGun.updateShooting();
     }
 }
