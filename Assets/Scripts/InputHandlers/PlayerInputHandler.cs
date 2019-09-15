@@ -2,8 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerInputHandler : IInputHandler
+[CreateAssetMenu(fileName = "PlayerInputHandler", menuName = "ScriptableObjects/PlayerInputHandler", order = 1)]
+public class PlayerInputHandler : ScriptableObject, IInputHandler
 {
+    [SerializeField]
+    int valuesome;
+
     ActionContainer buttonA;
     ActionContainer buttonD;
     ActionContainer buttonS;

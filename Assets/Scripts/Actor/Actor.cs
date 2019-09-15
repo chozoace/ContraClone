@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Actor : MonoBehaviour, IShooter
+public abstract class Actor : MonoBehaviour, IShooter, IPhysics
 {
     protected SpriteRenderer spriteRenderer;
     protected Animator animator;
@@ -14,6 +14,10 @@ public class Actor : MonoBehaviour, IShooter
     public Vector2 ShootDirection { get { return shootDirection; } }
     protected Vector2 shootOrigin = Vector2.zero;
     public Vector2 ShootOrigin { get { return shootOrigin; } }
+
+    public abstract Vector2 ComputeVelocity(Vector2 velocity, bool grounded);
+    public abstract PhysicsObject GetPhysicsObject();
+    protected abstract void UpdateShootDirection();
 
     public void Awake()
     {
@@ -38,10 +42,6 @@ public class Actor : MonoBehaviour, IShooter
             this.equippedGun.stopShooting();
             canShoot = true;
         }
-    }
-    protected virtual void UpdateShootDirection()
-    {
-
     }
 
     public virtual void Update()

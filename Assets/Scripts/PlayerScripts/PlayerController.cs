@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerController : Actor, IPhysics
+public class PlayerController : Actor
 {
-    public float maxSpeed = 7;
-    public float jumpTakeOffSpeed = 7;
+    [SerializeField] float maxSpeed = 7;
+    [SerializeField] float jumpTakeOffSpeed = 7;
 
     new void Awake()
     {
@@ -18,11 +18,11 @@ public class PlayerController : Actor, IPhysics
 
     public override void Update()
     {
-        handleInput();
+        HandleInput();
         base.Update();
     }
 
-    void handleInput()
+    public void HandleInput()
     {
         Action action = inputHandler.HandleInput();
         if(action != null)
@@ -61,7 +61,7 @@ public class PlayerController : Actor, IPhysics
         animator.SetInteger("aimY", (int)Input.GetAxisRaw("Vertical"));
     }
 
-    public Vector2 ComputeVelocity(Vector2 velocity, bool grounded)
+    public override Vector2 ComputeVelocity(Vector2 velocity, bool grounded)
     {
         Vector2 move = Vector2.zero;
 
@@ -91,7 +91,7 @@ public class PlayerController : Actor, IPhysics
         return new Vector2(move.x * maxSpeed, velocity.y);
     }
 
-    public PhysicsObject GetPhysicsObject()
+    public override PhysicsObject GetPhysicsObject()
     {
         return GetComponent<PhysicsObject>();
     }
