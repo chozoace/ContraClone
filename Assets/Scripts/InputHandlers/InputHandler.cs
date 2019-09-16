@@ -4,6 +4,6 @@ using UnityEngine;
 
 public abstract class InputHandler : ScriptableObject
 {
-    public abstract Action HandleInput();
+    public abstract void HandleInput();
 
 }

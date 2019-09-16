@@ -12,9 +12,12 @@ public class GameController : MonoBehaviour
 
     [SerializeField]
     PlayerController player;
+    static PlayerController playerInstance;
+    public static PlayerController Player { get { return playerInstance; } }
 
     void Start()
     {
+        playerInstance = player;
         currentGameState = GameState.gameplayState;
         currentGameState.Enter();
     }
@@ -25,11 +28,6 @@ public class GameController : MonoBehaviour
         lastGameState = currentGameState;
         currentGameState = newState;
         currentGameState.Enter();
-    }
-
-    public PlayerController GetPlayer()
-    {
-        return player;
     }
 
     private void Update()

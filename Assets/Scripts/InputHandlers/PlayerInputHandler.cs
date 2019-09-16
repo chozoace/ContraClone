@@ -15,7 +15,12 @@ public class PlayerInputHandler : InputHandler
     ActionContainer buttonJ = new ShootAction();
     ActionContainer buttonSpace;
 
-    public override Action HandleInput()
+    public override void HandleInput()
+    {
+        HandlePlayerInput();
+    }
+
+    public void HandlePlayerInput()
     {
         Action actionToReturn = null;
 
@@ -39,6 +44,6 @@ public class PlayerInputHandler : InputHandler
             actionToReturn = buttonSpace.getReleaseAction();
         }
 
-        return actionToReturn;
+        GameController.Player.ExecuteAction(actionToReturn);
     }
 }

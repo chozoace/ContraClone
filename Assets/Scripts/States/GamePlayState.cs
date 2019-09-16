@@ -10,8 +10,6 @@ public class GamePlayState : GameState
     {
         this.stateName = "GamePlayState";
         inputHandler = Resources.Load<PlayerInputHandler>("ScriptableObjects/InputHandlers/PlayerInputHandler");
-        //uggh
-        player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
     }
 
     public override void Enter()
@@ -26,14 +24,12 @@ public class GamePlayState : GameState
 
     public override void FixedUpdateState()
     {
-        player.FixedUpdateSelf();
+        GameController.Player.FixedUpdateSelf();
     }
 
     public override void UpdateState()
     {
-        //only for PlayerInputHandler
-        player.ExecuteAction(inputHandler.HandleInput());
-        //this will be moved to partition logic
-        player.UpdateSelf();
+        inputHandler.HandleInput();
+        GameController.Player.UpdateSelf();
     }
 }
