@@ -35,14 +35,14 @@ public class PhysicsObject : MonoBehaviour
         contactFilter.useLayerMask = true;
     }
 
-    private void Update()
+    public void PhysicsUpdate()
     {
         targetVelocity = Vector2.zero;
         targetVelocity = physicsComponent.ComputeVelocity(velocity, grounded);
         velocity.y = targetVelocity.y;
     }
 
-    private void FixedUpdate()
+    public void PhysicsFixedUpdate()
     {
         velocity += gravityModifier * Physics2D.gravity * Time.deltaTime;
         velocity.x = targetVelocity.x;

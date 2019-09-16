@@ -15,7 +15,6 @@ public abstract class Actor : MonoBehaviour, IShooter, IPhysics, IUpdateable
     public Vector2 ShootOrigin { get { return shootOrigin; } }
 
     public abstract Vector2 ComputeVelocity(Vector2 velocity, bool grounded);
-    public abstract PhysicsObject GetPhysicsObject();
     public abstract void UpdateShootDirection();
 
     public void Awake()
@@ -47,15 +46,21 @@ public abstract class Actor : MonoBehaviour, IShooter, IPhysics, IUpdateable
     {
         UpdateShootDirection();
         equippedGun.updateShooting();
+        GetPhysicsObject().PhysicsUpdate();
     }
 
     public void FixedUpdateSelf()
     {
-        
+        GetPhysicsObject().PhysicsFixedUpdate();
     }
 
     public void UpdateGridPosition()
     {
         //update current partition here
+    }
+
+    public PhysicsObject GetPhysicsObject()
+    {
+        return GetComponent<PhysicsObject>();
     }
 }

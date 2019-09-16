@@ -27,7 +27,7 @@ public class GamePlayState : GameState
 
     public override void FixedUpdateState()
     {
-        
+        player.FixedUpdateSelf();
     }
 
     public override void UpdateState()

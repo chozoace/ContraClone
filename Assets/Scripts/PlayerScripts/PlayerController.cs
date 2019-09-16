@@ -82,9 +82,4 @@ public class PlayerController : Actor
 
         return new Vector2(move.x * maxSpeed, velocity.y);
     }
-
-    public override PhysicsObject GetPhysicsObject()
-    {
-        return GetComponent<PhysicsObject>();
-    }
 }
