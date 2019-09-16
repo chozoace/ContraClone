@@ -6,4 +6,5 @@ public interface IShooter
 {
     void StartShooting();
     void EndShooting();
+    void UpdateShootDirection();
 }

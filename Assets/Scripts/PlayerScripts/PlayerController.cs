@@ -11,27 +11,19 @@ public class PlayerController : Actor
     {
         base.Awake();
         this.equippedGun = new BasicGun(this);
-        this.inputHandler = new PlayerInputHandler();
 
         shootDirection.x = 1;
     }
 
-    public override void Update()
+    public void ExecuteAction(Action action)
     {
-        HandleInput();
-        base.Update();
-    }
-
-    public void HandleInput()
-    {
-        Action action = inputHandler.HandleInput();
         if(action != null)
         {
             action.execute(this);
         }
     }
 
-    protected override void UpdateShootDirection()
+    public override void UpdateShootDirection()
     {
         //This is temporary until I figure out a way to determine shoot origin based on state of Actor
         shootOrigin = Vector2.zero;

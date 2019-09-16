@@ -4,12 +4,15 @@ using UnityEngine;
 
 public class GamePlayState : GameState
 {
-    IInputHandler inputHandler;
+    InputHandler inputHandler;
     PlayerController player;
 
     public GamePlayState()
     {
         this.stateName = "GamePlayState";
+        inputHandler = Resources.Load<PlayerInputHandler>("ScriptableObjects/InputHandlers/PlayerInputHandler");
+        //uggh
+        player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
     }
 
     public override void Enter()
@@ -29,6 +32,9 @@ public class GamePlayState : GameState
 
     public override void UpdateState()
     {
-        player.HandleInput();
+        //only for PlayerInputHandler
+        player.ExecuteAction(inputHandler.HandleInput());
+        //this will be moved to partition logic
+        player.UpdateSelf();
     }
 }

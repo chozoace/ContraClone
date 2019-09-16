@@ -2,11 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class Actor : MonoBehaviour, IShooter, IPhysics
+public abstract class Actor : MonoBehaviour, IShooter, IPhysics, IUpdateable
 {
     protected SpriteRenderer spriteRenderer;
     protected Animator animator;
-    protected IInputHandler inputHandler;
     
     protected Gun equippedGun;
     protected bool canShoot = true;
@@ -17,7 +16,7 @@ public abstract class Actor : MonoBehaviour, IShooter, IPhysics
 
     public abstract Vector2 ComputeVelocity(Vector2 velocity, bool grounded);
     public abstract PhysicsObject GetPhysicsObject();
-    protected abstract void UpdateShootDirection();
+    public abstract void UpdateShootDirection();
 
     public void Awake()
     {
@@ -44,9 +43,19 @@ public abstract class Actor : MonoBehaviour, IShooter, IPhysics
         }
     }
 
-    public virtual void Update()
+    public void UpdateSelf()
     {
         UpdateShootDirection();
         equippedGun.updateShooting();
+    }
+
+    public void FixedUpdateSelf()
+    {
+        
+    }
+
+    public void UpdateGridPosition()
+    {
+        //update current partition here
     }
 }

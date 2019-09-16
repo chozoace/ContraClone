@@ -10,12 +10,26 @@ public class GameController : MonoBehaviour
     private GameState currentGameState;
     private GameState lastGameState;
 
+    [SerializeField]
+    PlayerController player;
+
+    void Start()
+    {
+        currentGameState = GameState.gameplayState;
+        currentGameState.Enter();
+    }
+
     public void ChangeGameState(GameState newState)
     {
         currentGameState.Exit();
         lastGameState = currentGameState;
         currentGameState = newState;
         currentGameState.Enter();
+    }
+
+    public PlayerController GetPlayer()
+    {
+        return player;
     }
 
     private void Update()

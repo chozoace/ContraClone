@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "PlayerInputHandler", menuName = "ScriptableObjects/PlayerInputHandler", order = 1)]
-public class PlayerInputHandler : ScriptableObject, IInputHandler
+public class PlayerInputHandler : InputHandler
 {
     [SerializeField]
-    int valuesome;
+    int value;
 
     ActionContainer buttonA;
     ActionContainer buttonD;
@@ -15,7 +15,7 @@ public class PlayerInputHandler : ScriptableObject, IInputHandler
     ActionContainer buttonJ = new ShootAction();
     ActionContainer buttonSpace;
 
-    public Action HandleInput()
+    public override Action HandleInput()
     {
         Action actionToReturn = null;
 
