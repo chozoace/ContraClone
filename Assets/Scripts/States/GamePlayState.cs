@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class GamePlayState : GameState
 {
-    InputHandler inputHandler;
     PlayerController player;
 
     public GamePlayState()

@@ -4,6 +4,7 @@ using System.Collections;
 
 public abstract class GameState
 {
+    protected InputHandler inputHandler;
     public static GamePlayState gameplayState = new GamePlayState();
 
     protected string stateName = "Default";
