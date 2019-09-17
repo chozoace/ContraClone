@@ -5,9 +5,6 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "PlayerInputHandler", menuName = "ScriptableObjects/PlayerInputHandler", order = 1)]
 public class PlayerInputHandler : InputHandler
 {
-    [SerializeField]
-    int value;
-
     ActionContainer buttonA;
     ActionContainer buttonD;
     ActionContainer buttonS;
@@ -43,6 +40,8 @@ public class PlayerInputHandler : InputHandler
         {
             actionToReturn = buttonSpace.getReleaseAction();
         }
+
+        //fires off an event
 
         GameController.Player.ExecuteAction(actionToReturn);
     }
