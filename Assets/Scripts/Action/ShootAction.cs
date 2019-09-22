@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class ShootAction : ActionContainer
 {
-    public Action getPressAction()
+    public override Action getPressAction()
     {
         return new ShootPressAction();
     }
 
-    public Action getReleaseAction()
+    public override Action getReleaseAction()
     {
         return new ShootReleaseAction();
     }

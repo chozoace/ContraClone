@@ -1,8 +1,10 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System;
 
-public interface ActionContainer
+[System.Serializable]
+public abstract class ActionContainer
 {
-    Action getPressAction();
-    Action getReleaseAction();
+    public abstract Action getPressAction();
+    public abstract Action getReleaseAction();
 }

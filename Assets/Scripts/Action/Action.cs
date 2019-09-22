@@ -5,5 +5,4 @@ using UnityEngine;
 public interface Action
 {
     void execute(Actor actor);
-    
 }

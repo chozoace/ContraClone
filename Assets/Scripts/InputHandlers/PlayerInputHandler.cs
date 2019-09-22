@@ -5,6 +5,12 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "PlayerInputHandler", menuName = "ScriptableObjects/PlayerInputHandler", order = 1)]
 public class PlayerInputHandler : InputHandler
 {
+    [SerializeField]
+    //https://answers.unity.com/questions/460727/how-to-serialize-dictionary-with-unity-serializati.html
+    public Dictionary<KeyCode, string> inputMap = new Dictionary<KeyCode, string>();
+    public List<string> list = new List<string>();
+    
+
     ActionContainer buttonA;
     ActionContainer buttonD;
     ActionContainer buttonS;
