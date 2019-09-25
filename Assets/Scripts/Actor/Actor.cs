@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class Actor : MonoBehaviour, IShooter, IPhysics, IUpdateable, IActionable
+public abstract class Actor : MonoBehaviour, IShooter, IPhysics, IActionable
 {
     protected SpriteRenderer spriteRenderer;
     protected Animator animator;

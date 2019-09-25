@@ -13,3 +13,5 @@ MonoBehaviour:
   m_Name: PlayerInputHandler
   m_EditorClassIdentifier: 
   inputEvent: {fileID: 11400000, guid: 54879a0d540c4b94bb1d6e32cd396897, type: 2}
+  controls:
+    shootButton: 106

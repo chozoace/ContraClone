@@ -5,35 +5,31 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "PlayerInputHandler", menuName = "ScriptableObjects/PlayerInputHandler", order = 1)]
 public class PlayerInputHandler : InputHandler
 {
-    [SerializeField]
-    //https://answers.unity.com/questions/460727/how-to-serialize-dictionary-with-unity-serializati.html
     public Dictionary<KeyCode, ActionContainer> inputMap = new Dictionary<KeyCode, ActionContainer>();
     public InputEvent inputEvent;
 
     [SerializeField]
     PlayerControlsMapping controls;
 
-    public ActionContainer buttonA;
-    ActionContainer buttonD;
-    ActionContainer buttonS;
-    ActionContainer buttonW;
-    ActionContainer buttonJ = new ShootAction();
-    ActionContainer buttonSpace;
+    private void OnEnable()
+    {
+        inputMap.Add(controls.shootButton, new ShootAction());
+    }
 
     public override void HandleInput()
     {
         Action action = null;
 
         //button press
-        if (Input.GetKeyDown(KeyCode.J) && buttonJ != null)
+        if (Input.GetKeyDown(controls.shootButton) && inputMap[controls.shootButton] != null)
         {
-            action = buttonJ.getPressAction();
+            action = inputMap[controls.shootButton].getPressAction();
         }
 
         //button release
-        if (Input.GetKeyUp(KeyCode.J) && buttonJ != null)
+        if (Input.GetKeyUp(KeyCode.J) && inputMap[controls.shootButton] != null)
         {
-            action = buttonJ.getReleaseAction();
+            action = inputMap[controls.shootButton].getReleaseAction();
         }
 
         //fires off an event
@@ -43,5 +39,5 @@ public class PlayerInputHandler : InputHandler
 [System.Serializable]
 public struct PlayerControlsMapping
 {
-    public List<KeyCode> keyCodes;
+    public KeyCode shootButton;
 }

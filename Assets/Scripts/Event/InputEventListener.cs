@@ -18,6 +18,8 @@ public class InputEventListener : MonoBehaviour
         Event.UnregisterListener(this);
     }
 
+    //might want to make a class that inherits from inputeventListener but does not execute the action but invokes something
+    //like a unity event
     public void OnEventRaised(Action action)
     {
         actionable.ExecuteAction(action);
