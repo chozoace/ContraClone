@@ -7,11 +7,13 @@ public class PlayerInputHandler : InputHandler
 {
     [SerializeField]
     //https://answers.unity.com/questions/460727/how-to-serialize-dictionary-with-unity-serializati.html
-    public Dictionary<KeyCode, string> inputMap = new Dictionary<KeyCode, string>();
-    public List<string> list = new List<string>();
-    
+    public Dictionary<KeyCode, ActionContainer> inputMap = new Dictionary<KeyCode, ActionContainer>();
+    public InputEvent inputEvent;
 
-    ActionContainer buttonA;
+    [SerializeField]
+    PlayerControlsMapping controls;
+
+    public ActionContainer buttonA;
     ActionContainer buttonD;
     ActionContainer buttonS;
     ActionContainer buttonW;
@@ -20,35 +22,26 @@ public class PlayerInputHandler : InputHandler
 
     public override void HandleInput()
     {
-        HandlePlayerInput();
-    }
-
-    public void HandlePlayerInput()
-    {
-        Action actionToReturn = null;
+        Action action = null;
 
         //button press
         if (Input.GetKeyDown(KeyCode.J) && buttonJ != null)
         {
-            actionToReturn = buttonJ.getPressAction();
-        }
-        else if (Input.GetKeyDown(KeyCode.Space) && buttonSpace != null)
-        {
-            actionToReturn = buttonSpace.getPressAction();
+            action = buttonJ.getPressAction();
         }
 
         //button release
         if (Input.GetKeyUp(KeyCode.J) && buttonJ != null)
         {
-            actionToReturn = buttonJ.getReleaseAction();
-        }
-        else if (Input.GetKeyUp(KeyCode.Space) && buttonSpace != null)
-        {
-            actionToReturn = buttonSpace.getReleaseAction();
+            action = buttonJ.getReleaseAction();
         }
 
         //fires off an event
-
-        GameController.Player.ExecuteAction(actionToReturn);
+        inputEvent.Raise(action);
     }
+}
+[System.Serializable]
+public struct PlayerControlsMapping
+{
+    public List<KeyCode> keyCodes;
 }

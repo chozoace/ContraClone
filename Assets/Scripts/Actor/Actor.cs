@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class Actor : MonoBehaviour, IShooter, IPhysics, IUpdateable
+public abstract class Actor : MonoBehaviour, IShooter, IPhysics, IUpdateable, IActionable
 {
     protected SpriteRenderer spriteRenderer;
     protected Animator animator;
@@ -16,6 +16,14 @@ public abstract class Actor : MonoBehaviour, IShooter, IPhysics, IUpdateable
 
     public abstract Vector2 ComputeVelocity(Vector2 velocity, bool grounded);
     public abstract void UpdateShootDirection();
+
+    public void ExecuteAction(Action action)
+    {
+        if (action != null)
+        {
+            action.execute(this.gameObject);
+        }
+    }
 
     public void Awake()
     {

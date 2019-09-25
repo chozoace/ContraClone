@@ -5,5 +5,4 @@ using UnityEngine;
 public abstract class InputHandler : ScriptableObject
 {
     public abstract void HandleInput();
-
 }

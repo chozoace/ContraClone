@@ -3,8 +3,12 @@ using UnityEditor;
 
 public class ShootReleaseAction : Action
 {
-    public void execute(Actor actor)
+    public void execute(GameObject obj)
     {
-        actor.EndShooting();
+        IShooter shooter = obj.GetComponent<IShooter>();
+        if (shooter != null)
+            shooter.EndShooting();
+        else
+            throw new MissingComponentException("GameObject does not implement IShooter");
     }
 }

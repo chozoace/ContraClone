@@ -15,14 +15,6 @@ public class PlayerController : Actor
         shootDirection.x = 1;
     }
 
-    public void ExecuteAction(Action action)
-    {
-        if(action != null)
-        {
-            action.execute(this);
-        }
-    }
-
     public override void UpdateShootDirection()
     {
         //This is temporary until I figure out a way to determine shoot origin based on state of Actor

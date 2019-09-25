@@ -4,9 +4,13 @@ using UnityEngine;
 
 public class ShootPressAction : Action
 {
-    public void execute(Actor actor)
+    public void execute(GameObject obj)
     {
-        actor.StartShooting();
+        IShooter shooter = obj.GetComponent<IShooter>();
+        if (shooter != null)
+            shooter.StartShooting();
+        else
+            throw new MissingComponentException("GameObject does not implement IShooter");
     }
 }
 

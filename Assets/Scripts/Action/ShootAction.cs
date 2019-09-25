@@ -4,13 +4,9 @@ using UnityEngine;
 
 public class ShootAction : ActionContainer
 {
-    public override Action getPressAction()
+    public ShootAction()
     {
-        return new ShootPressAction();
-    }
-
-    public override Action getReleaseAction()
-    {
-        return new ShootReleaseAction();
+        this.pressAction = new ShootPressAction();
+        this.releaseAction = new ShootReleaseAction();
     }
 }

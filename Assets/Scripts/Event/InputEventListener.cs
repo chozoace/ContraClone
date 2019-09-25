@@ -5,11 +5,12 @@ using System.Collections;
 public class InputEventListener : MonoBehaviour
 {
     public InputEvent Event;
-    public InputResponse Response;
+    private IActionable actionable; 
 
     private void OnEnable()
     {
         Event.RegisterListener(this);
+        actionable = this.gameObject.GetComponent<IActionable>();
     }
 
     private void OnDisable()
@@ -17,8 +18,8 @@ public class InputEventListener : MonoBehaviour
         Event.UnregisterListener(this);
     }
 
-    public void OnEventRaised(KeyCode keyCode, bool wasPressed)
+    public void OnEventRaised(Action action)
     {
-        Response.Invoke(keyCode, wasPressed);
+        actionable.ExecuteAction(action);
     }
 }

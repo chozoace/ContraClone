@@ -7,11 +7,11 @@ public class InputEvent : ScriptableObject
 {
     private List<InputEventListener> listeners = new List<InputEventListener>();
 
-    public void Raise(KeyCode keyCode, bool wasPressed)
+    public void Raise(Action action)
     {
         for (int i = listeners.Count - 1; i >= 0; i--)
         {
-            listeners[i].OnEventRaised(keyCode, wasPressed);
+            listeners[i].OnEventRaised(action);
         }
     }
 
