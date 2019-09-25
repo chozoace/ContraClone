@@ -33,7 +33,10 @@ public class PlayerInputHandler : InputHandler
         }
 
         //fires off an event
-        inputEvent.Raise(action);
+        if (action != null)
+        {
+            inputEvent.Raise(action);
+        }
     }
 }
 [System.Serializable]

@@ -51,6 +51,7 @@ public class PlayerController : Actor
 
         move.x = Input.GetAxisRaw("Horizontal");
 
+        //move this to be an action
         if (Input.GetButtonDown("Jump") && grounded)
         {
             velocity.y = jumpTakeOffSpeed;
