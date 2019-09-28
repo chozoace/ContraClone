@@ -24,12 +24,14 @@ public class GamePlayState : GameState
 
     public override void FixedUpdateState()
     {
+        //this will eventually happen in the partition
         GameController.Player.FixedUpdateSelf();
     }
 
     public override void UpdateState()
     {
         inputHandler.HandleInput();
+        ////this will eventually happen in the partition
         GameController.Player.UpdateSelf();
     }
 }

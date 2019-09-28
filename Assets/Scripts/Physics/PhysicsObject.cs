@@ -4,15 +4,22 @@ using UnityEngine;
 
 public class PhysicsObject : MonoBehaviour
 {
+    [SerializeField] public float maxSpeed = 7;
+    [SerializeField] public float jumpTakeOffSpeed = 7;
+
+    private Vector2 inputDir = Vector2.zero;
+    public Vector2 InputDir { get { return inputDir; } set { inputDir = value; } }
+
     public float minGroundNormalY = .65f;
     public float gravityModifier = 1f;
 
     private Vector2 targetVelocity;
     private bool grounded;
+    public bool IsGrounded { get { return grounded; } }
     private Vector2 groundNormal;
     private Rigidbody2D rb2d;
     private Vector2 velocity;
-    public Vector2 Velocity { get { return velocity; } }
+    public Vector2 Velocity { get { return velocity; } set { velocity = value; } }
     private ContactFilter2D contactFilter;
     private RaycastHit2D[] hitBuffer = new RaycastHit2D[16];
     private List<RaycastHit2D> hitBufferList = new List<RaycastHit2D>(16);
@@ -38,7 +45,7 @@ public class PhysicsObject : MonoBehaviour
     public void PhysicsUpdate()
     {
         targetVelocity = Vector2.zero;
-        targetVelocity = physicsComponent.ComputeVelocity(velocity, grounded);
+        targetVelocity = physicsComponent.ComputeVelocity(velocity, grounded, maxSpeed);
         velocity.y = targetVelocity.y;
     }
 

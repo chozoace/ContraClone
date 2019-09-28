@@ -6,6 +6,7 @@ using UnityEngine;
 public class PlayerInputHandler : InputHandler
 {
     public Dictionary<KeyCode, ActionContainer> inputMap = new Dictionary<KeyCode, ActionContainer>();
+    MoveInputAxisAction moveInputAxisAction = new MoveInputAxisAction();
     public InputEvent inputEvent;
 
     [SerializeField]
@@ -14,33 +15,43 @@ public class PlayerInputHandler : InputHandler
     private void OnEnable()
     {
         inputMap.Add(controls.shootButton, new ShootAction());
+        inputMap.Add(controls.jumpButton, new JumpAction());
     }
 
     public override void HandleInput()
     {
+        this.HandleDirectionInput();
+        this.HandleButtonInput();
+    }
+
+    private void HandleButtonInput()
+    {
         Action action = null;
-
-        //button press
-        if (Input.GetKeyDown(controls.shootButton) && inputMap[controls.shootButton] != null)
+        
+        //simultaneous buttons being a seperate action not handled
+        foreach(KeyCode keyCode in inputMap.Keys)
         {
-            action = inputMap[controls.shootButton].getPressAction();
+            if(Input.GetKeyDown(keyCode) && inputMap[keyCode] != null)
+            {
+                action = inputMap[keyCode].getPressAction();
+                inputEvent.Raise(action);
+            }
+            else if (Input.GetKeyUp(keyCode) && inputMap[keyCode] != null)
+            {
+                action = inputMap[keyCode].getReleaseAction();
+                inputEvent.Raise(action);
+            }
         }
+    }
 
-        //button release
-        if (Input.GetKeyUp(KeyCode.J) && inputMap[controls.shootButton] != null)
-        {
-            action = inputMap[controls.shootButton].getReleaseAction();
-        }
-
-        //fires off an event
-        if (action != null)
-        {
-            inputEvent.Raise(action);
-        }
+    private void HandleDirectionInput()
+    {
+        inputEvent.Raise(moveInputAxisAction);
     }
 }
 [System.Serializable]
 public struct PlayerControlsMapping
 {
     public KeyCode shootButton;
+    public KeyCode jumpButton;
 }
