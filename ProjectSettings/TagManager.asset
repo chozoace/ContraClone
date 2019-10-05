@@ -6,6 +6,7 @@ TagManager:
   tags:
   - LevelGridStart
   - LevelGridEnd
+  - UpdateManager
   layers:
   - Default
   - TransparentFX

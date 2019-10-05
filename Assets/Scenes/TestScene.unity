@@ -394,8 +394,8 @@ GameObject:
   - component: {fileID: 1088015861}
   - component: {fileID: 1088015862}
   m_Layer: 0
-  m_Name: GameController
-  m_TagString: GameController
+  m_Name: UpdateManager
+  m_TagString: UpdateManager
   m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -427,6 +427,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1914412990}
+  gameStateManager: {fileID: 0}
 --- !u!1 &1127318076
 GameObject:
   m_ObjectHideFlags: 0

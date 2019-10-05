@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GameController : MonoBehaviour
+public class UpdateManager : MonoBehaviour
 {
     //this controller is persistent across the whole game
     private LevelController levelController;
@@ -15,6 +15,9 @@ public class GameController : MonoBehaviour
     static PlayerController playerInstance;
     public static PlayerController Player { get { return playerInstance; } }
 
+    [SerializeField]
+    GameStateManager gameStateManager;
+
     void Start()
     {
         playerInstance = player;
@@ -22,6 +25,7 @@ public class GameController : MonoBehaviour
         currentGameState.Enter();
     }
 
+    //event?
     public void ChangeGameState(GameState newState)
     {
         currentGameState.Exit();
