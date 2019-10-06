@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public interface IShooter
+public interface IShooter : IUpdateable
 {
     void StartShooting();
     void EndShooting();

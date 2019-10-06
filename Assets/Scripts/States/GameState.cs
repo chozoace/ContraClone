@@ -2,12 +2,12 @@
 using UnityEngine;
 using System.Collections;
 
-public abstract class GameState
+public abstract class GameState : ScriptableObject
 {
+    [SerializeField]
     protected InputHandler inputHandler;
-    public static GamePlayState gameplayState = new GamePlayState();
 
-    protected string stateName = "Default";
+    protected string stateName;
     public virtual string StateName { get { return stateName; } }
 
     //could make these into an interface for different types of states

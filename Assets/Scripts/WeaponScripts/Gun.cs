@@ -2,20 +2,19 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class Gun 
+public abstract class Gun : MonoBehaviour
 {
+    [SerializeField]
     protected float fireRate = 1.0f;
-    protected float timeStamp = Time.time;
+    protected float timeStamp;
     protected bool shooting = false;
-    protected Actor owner;
+    [SerializeField]
+    protected ShooterObject owner;
+    [SerializeField]
     protected GameObject bulletTypePrefab;
+    [SerializeField]
     protected float bulletFireSpeed;
     protected List<Bullet> bulletList = new List<Bullet>();
-
-    public Gun(Actor obj)
-    {
-        owner = obj;
-    }
 
     public abstract void shoot(Vector2 shootOrigin, Vector2 shootDirection);
     public void startShooting() { shooting = true; }

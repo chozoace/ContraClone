@@ -4,12 +4,6 @@ using UnityEngine;
 
 public class UpdateManager : MonoBehaviour
 {
-    //this controller is persistent across the whole game
-    private LevelController levelController;
-
-    private GameState currentGameState;
-    private GameState lastGameState;
-
     [SerializeField]
     PlayerController player;
     static PlayerController playerInstance;
@@ -21,26 +15,16 @@ public class UpdateManager : MonoBehaviour
     void Start()
     {
         playerInstance = player;
-        currentGameState = GameState.gameplayState;
-        currentGameState.Enter();
-    }
-
-    //event?
-    public void ChangeGameState(GameState newState)
-    {
-        currentGameState.Exit();
-        lastGameState = currentGameState;
-        currentGameState = newState;
-        currentGameState.Enter();
+        gameStateManager.ChangeGameState(GameStatesEnum.GamePlayState);
     }
 
     private void Update()
     {
-        currentGameState.UpdateState();
+        gameStateManager.UpdateState();
     }
 
     private void FixedUpdate()
     {
-        currentGameState.FixedUpdateState();
+        gameStateManager.FixedUpdateState();
     }
 }

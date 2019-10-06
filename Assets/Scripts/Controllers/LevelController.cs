@@ -6,6 +6,7 @@ public class LevelController : MonoBehaviour
 {
     //This controller will change according to scene
     //This is really more of a scene controller
+    [SerializeField]
     private WorldGrid worldGrid;
     [SerializeField] GameObject topLeftPosition;
     [SerializeField] GameObject bottomRightPosition;
@@ -17,8 +18,7 @@ public class LevelController : MonoBehaviour
     //https://www.habrador.com/tutorials/programming-patterns/19-spatial-partition-pattern/
     public void Start()
     {
-        worldGrid = new WorldGrid();
-        worldGrid.CreateGrid(topLeftPosition.transform.position,
+       worldGrid.CreateGrid(topLeftPosition.transform.position,
             bottomRightPosition.transform.position);
     }
 

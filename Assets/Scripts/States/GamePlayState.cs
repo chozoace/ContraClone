@@ -2,14 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[CreateAssetMenu(fileName = "GamePlayState", menuName = "ScriptableObjects/GameStates/GamePlayState", order = 1)]
 public class GamePlayState : GameState
 {
     PlayerController player;
 
-    public GamePlayState()
+    private void OnEnable()
     {
         this.stateName = "GamePlayState";
-        inputHandler = Resources.Load<PlayerInputHandler>("ScriptableObjects/InputHandlers/PlayerInputHandler");
     }
 
     public override void Enter()
@@ -25,13 +25,21 @@ public class GamePlayState : GameState
     public override void FixedUpdateState()
     {
         //this will eventually happen in the partition
-        UpdateManager.Player.FixedUpdateSelf();
+        IUpdateable[] list = UpdateManager.Player.GetComponents<IUpdateable>();
+        for(int i = 0; i < list.Length; i++)
+        {
+            list[i].FixedUpdateSelf();
+        }
     }
 
     public override void UpdateState()
     {
         inputHandler.HandleInput();
         ////this will eventually happen in the partition
-        UpdateManager.Player.UpdateSelf();
+        IUpdateable[] list = UpdateManager.Player.GetComponents<IUpdateable>();
+        for (int i = 0; i < list.Length; i++)
+        {
+            list[i].UpdateSelf();
+        }
     }
 }

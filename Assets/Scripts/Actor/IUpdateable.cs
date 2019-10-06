@@ -6,5 +6,4 @@ public interface IUpdateable
 {
     void UpdateSelf();
     void FixedUpdateSelf();
-    void UpdateGridPosition();
 }

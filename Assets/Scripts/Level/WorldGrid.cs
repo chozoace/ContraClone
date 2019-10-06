@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class WorldGrid
+[CreateAssetMenu(fileName = "WorldGrid", menuName = "ScriptableObjects/WorldGrid", order = 2)]
+public class WorldGrid : ScriptableObject
 {
     private Partition[,] partitions;
     private float gridWidth;
@@ -11,7 +12,7 @@ public class WorldGrid
     private float partitionHeight;
     private Vector2 gridOffset;
 
-    public WorldGrid()
+    private void OnEnable()
     {
         partitionHeight =(Camera.main.orthographicSize * 2) + 1;
         partitionWidth = (Camera.main.orthographicSize * 2 * Camera.main.aspect) + 1;
@@ -35,5 +36,8 @@ public class WorldGrid
         }        
     }
     
+    public void Move(GameObject gameObject, Vector2 oldPos)
+    {
 
+    }
 }

@@ -4,11 +4,12 @@ using UnityEngine;
 
 public class BasicGun : Gun
 {
-    public BasicGun(Actor obj) : base(obj)
+    void Start()
     {
         fireRate = 0.4f;
         bulletTypePrefab = Resources.Load("Prefabs/Bullets/BasicBullet") as GameObject;
         this.bulletFireSpeed = 4.0f;
+        this.timeStamp = Time.time;
     }
 
     public override void shoot(Vector2 shootOrigin, Vector2 shootDirection)
