@@ -8,6 +8,17 @@ public class Partition
 
     public void Add(GameObject gameObject)
     {
-        gameObjectList.Add(gameObject);
+        if (!gameObjectList.Contains(gameObject))
+        {
+            gameObjectList.Add(gameObject);
+        }
+    }
+
+    public void Remove(GameObject gameObject)
+    {
+        if (gameObjectList.Contains(gameObject))
+        {
+            gameObjectList.Remove(gameObject);
+        }
     }
 }

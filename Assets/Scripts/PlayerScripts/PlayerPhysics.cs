@@ -51,15 +51,13 @@ public class PlayerPhysics : MonoBehaviour, IPhysics
         moveDirection = newDir;
     }
 
-    public void UpdateGridPosition()
+    public void UpdateGridPosition(Vector2 oldPos)
     {
-        //Update partition position within world grid
-        //WorldGrid.Move
+        worldGrid.Move(this.gameObject, oldPos);
     }
 
     public void UpdateSelf()
     {
         physicsObject.PhysicsUpdate();
-        UpdateGridPosition();
     }
 }

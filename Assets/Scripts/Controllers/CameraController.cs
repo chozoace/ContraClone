@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class CameraController : MonoBehaviour
 {
-
     //needs to follow player until reach scene end
+    [SerializeField]
+    GameObject player;
+
+
+
 }

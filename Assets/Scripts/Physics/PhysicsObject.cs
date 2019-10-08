@@ -9,6 +9,8 @@ public class PhysicsObject : MonoBehaviour
 
     private Vector2 inputDir = Vector2.zero;
     public Vector2 InputDir { get { return inputDir; } set { inputDir = value; } }
+    private Vector2 oldPos = Vector2.zero;
+    public Vector2 OldPos { get { return oldPos; } set { oldPos = value; } }
 
     public float minGroundNormalY = .65f;
     public float gravityModifier = 1f;
@@ -33,6 +35,7 @@ public class PhysicsObject : MonoBehaviour
     {
         rb2d = GetComponent<Rigidbody2D>();
         physicsComponent = GetComponent<IPhysics>();
+        oldPos = this.gameObject.transform.position;
     }
 
     private void Start()
@@ -65,6 +68,9 @@ public class PhysicsObject : MonoBehaviour
         move = Vector2.up * deltaPosition.y;
 
         Movement(move, true);
+
+        physicsComponent.UpdateGridPosition(oldPos);
+        oldPos = rb2d.position;
     }
 
     void Movement(Vector2 move, bool yMovement)

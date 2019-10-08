@@ -14,8 +14,8 @@ public class WorldGrid : ScriptableObject
 
     private void OnEnable()
     {
-        partitionHeight =(Camera.main.orthographicSize * 2) + 1;
-        partitionWidth = (Camera.main.orthographicSize * 2 * Camera.main.aspect) + 1;
+        partitionHeight = (Camera.main.orthographicSize * 2) + .5f;
+        partitionWidth = (Camera.main.orthographicSize * 2 * Camera.main.aspect) + .5f;
     }
 
     public void CreateGrid(Vector2 topLeftCorner, Vector2 bottomRightCorner)
@@ -33,11 +33,29 @@ public class WorldGrid : ScriptableObject
             {
                 partitions[i, j] = new Partition();
             }
-        }        
+        }
+        Debug.Log(partitionWidth + " " + partitionHeight);
+        Debug.Log(gridWidth + " " + gridHeight);
+        Debug.Log(partitions.GetLength(0) + " " + partitions.GetLength(1));
     }
     
     public void Move(GameObject gameObject, Vector2 oldPos)
     {
+        //determine old cell
+        int oldCellX = (int)((oldPos.x - gridOffset.x) / partitionWidth);
+        int oldCellY = (int)(((oldPos.y - gridOffset.y) * -1) / partitionHeight);
 
+        //find new cell
+        int cellX = (int)((gameObject.GetComponent<Rigidbody2D>().position.x - gridOffset.x) / partitionWidth);
+        int cellY = (int)(((gameObject.GetComponent<Rigidbody2D>().position.y - gridOffset.y) * -1) / partitionHeight);
+
+        //if it didn't change cell, return
+        if (oldCellX == cellX && oldCellY == cellY)
+        {
+            return;
+        }
+
+        partitions[oldCellX, oldCellY].Remove(gameObject);
+        partitions[cellX, cellY].Add(gameObject);
     }
 }

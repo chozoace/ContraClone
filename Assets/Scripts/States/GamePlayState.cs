@@ -24,7 +24,7 @@ public class GamePlayState : GameState
 
     public override void FixedUpdateState()
     {
-        //this will eventually happen in the partition
+        //this will eventually happen in the partition based on camera position
         IUpdateable[] list = UpdateManager.Player.GetComponents<IUpdateable>();
         for(int i = 0; i < list.Length; i++)
         {
@@ -35,7 +35,7 @@ public class GamePlayState : GameState
     public override void UpdateState()
     {
         inputHandler.HandleInput();
-        ////this will eventually happen in the partition
+        ////this will eventually happen in the partition based on camera position
         IUpdateable[] list = UpdateManager.Player.GetComponents<IUpdateable>();
         for (int i = 0; i < list.Length; i++)
         {

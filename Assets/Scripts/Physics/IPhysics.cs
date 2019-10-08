@@ -8,5 +8,5 @@ public interface IPhysics : IUpdateable
     PhysicsObject GetPhysicsObject();
     Vector2 GetMoveDirection();
     void SetMoveDirection(Vector2 newDir);
-    void UpdateGridPosition();
+    void UpdateGridPosition(Vector2 oldPos);
 }
