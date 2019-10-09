@@ -16,7 +16,7 @@ public class LevelController : MonoBehaviour
     //Game state, Pause state, menu state. Each will have it's own controller.
     //A controller for every state
     //https://www.habrador.com/tutorials/programming-patterns/19-spatial-partition-pattern/
-    public void Start()
+    public void Awake()
     {
        worldGrid.CreateGrid(topLeftPosition.transform.position,
             bottomRightPosition.transform.position);

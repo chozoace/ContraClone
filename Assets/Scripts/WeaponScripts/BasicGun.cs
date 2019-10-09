@@ -6,9 +6,6 @@ public class BasicGun : Gun
 {
     void Start()
     {
-        fireRate = 0.4f;
-        bulletTypePrefab = Resources.Load("Prefabs/Bullets/BasicBullet") as GameObject;
-        this.bulletFireSpeed = 4.0f;
         this.timeStamp = Time.time;
     }
 

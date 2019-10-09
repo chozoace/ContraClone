@@ -1318,7 +1318,7 @@ Transform:
   m_LocalScale: {x: 70.5325, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1605943488
 BoxCollider2D:
@@ -1570,6 +1570,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 5264065033775886178, guid: 52e50b376a6c71244adeee9ba6470531,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5264065033775886188, guid: 52e50b376a6c71244adeee9ba6470531,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1608,7 +1613,7 @@ PrefabInstance:
     - target: {fileID: 5264065033775886188, guid: 52e50b376a6c71244adeee9ba6470531,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5264065033775886188, guid: 52e50b376a6c71244adeee9ba6470531,
         type: 3}
@@ -1625,16 +1630,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5264065033775886185, guid: 52e50b376a6c71244adeee9ba6470531,
-        type: 3}
-      propertyPath: maxSpeed
-      value: 1.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 5264065033775886185, guid: 52e50b376a6c71244adeee9ba6470531,
-        type: 3}
-      propertyPath: jumpTakeOffSpeed
-      value: 6
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 52e50b376a6c71244adeee9ba6470531, type: 3}
 --- !u!1 &5264065034797797846 stripped
@@ -1643,89 +1638,3 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 5264065034797797845}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &5264065034797797847
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5264065034797797846}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f17fe3098bd13b4086238f6e0a2529d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Event: {fileID: 11400000, guid: 54879a0d540c4b94bb1d6e32cd396897, type: 2}
---- !u!114 &5264065034797797848
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5264065034797797846}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2d7144280ba4b1f4e8a9539afdaf9b14, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  worldGrid: {fileID: 11400000, guid: 8da99cd7b0f161e47bf1b7c4eea53380, type: 2}
-  spriteRenderer: {fileID: 5264065034797797853}
-  animator: {fileID: 5264065034797797851}
-  physicsObject: {fileID: 5264065034797797855}
---- !u!114 &5264065034797797849
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5264065034797797846}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f787a5bd71f49ea4c807bb16f20464e7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fireRate: 0.4
-  owner: {fileID: 5264065034797797850}
-  bulletTypePrefab: {fileID: 4788858048224316623, guid: 9b66f1eb5d230b148ab67f71d10b8849,
-    type: 3}
-  bulletFireSpeed: 4
---- !u!114 &5264065034797797850
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5264065034797797846}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cb31e8b0a1c52ec49a10abb4320f92c3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  spriteRenderer: {fileID: 5264065034797797853}
-  animator: {fileID: 5264065034797797851}
-  physics: {fileID: 5264065034797797855}
-  equippedGun: {fileID: 5264065034797797849}
---- !u!95 &5264065034797797851 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 5264065033775886184, guid: 52e50b376a6c71244adeee9ba6470531,
-    type: 3}
-  m_PrefabInstance: {fileID: 5264065034797797845}
-  m_PrefabAsset: {fileID: 0}
---- !u!212 &5264065034797797853 stripped
-SpriteRenderer:
-  m_CorrespondingSourceObject: {fileID: 5264065033775886189, guid: 52e50b376a6c71244adeee9ba6470531,
-    type: 3}
-  m_PrefabInstance: {fileID: 5264065034797797845}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &5264065034797797855 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5264065033775886185, guid: 52e50b376a6c71244adeee9ba6470531,
-    type: 3}
-  m_PrefabInstance: {fileID: 5264065034797797845}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5264065034797797846}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: efa56a19fc58efb458508f54eaafbdc6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
