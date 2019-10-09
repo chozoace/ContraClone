@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Partition
 {
-    private List<GameObject> gameObjectList = new List<GameObject>();
+    public List<GameObject> gameObjectList = new List<GameObject>();
 
     public void Add(GameObject gameObject)
     {

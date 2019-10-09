@@ -5,7 +5,7 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "GamePlayState", menuName = "ScriptableObjects/GameStates/GamePlayState", order = 1)]
 public class GamePlayState : GameState
 {
-    PlayerController player;
+    List<Partition> partitions = new List<Partition>();
 
     private void OnEnable()
     {
@@ -24,22 +24,33 @@ public class GamePlayState : GameState
 
     public override void FixedUpdateState()
     {
-        //this will eventually happen in the partition based on camera position
-        IUpdateable[] list = UpdateManager.Player.GetComponents<IUpdateable>();
-        for(int i = 0; i < list.Length; i++)
+        partitions = worldGrid.GetUpdatablePartitions(Camera.main.gameObject);
+        foreach (Partition partition in partitions)
         {
-            list[i].FixedUpdateSelf();
+            for(int gameObjIndex = 0; gameObjIndex < partition.gameObjectList.Count; gameObjIndex++)
+            {
+                IUpdateable[] list = partition.gameObjectList[gameObjIndex].GetComponents<IUpdateable>();
+                for (int i = 0; i < list.Length; i++)
+                {
+                    list[i].FixedUpdateSelf();
+                }
+            }
         }
     }
 
     public override void UpdateState()
     {
         inputHandler.HandleInput();
-        ////this will eventually happen in the partition based on camera position
-        IUpdateable[] list = UpdateManager.Player.GetComponents<IUpdateable>();
-        for (int i = 0; i < list.Length; i++)
+        foreach (Partition partition in partitions)
         {
-            list[i].UpdateSelf();
+            for (int gameObjIndex = 0; gameObjIndex < partition.gameObjectList.Count; gameObjIndex++)
+            {
+                IUpdateable[] list = partition.gameObjectList[gameObjIndex].GetComponents<IUpdateable>();
+                for (int i = 0; i < list.Length; i++)
+                {
+                    list[i].UpdateSelf();
+                }
+            }
         }
     }
 }

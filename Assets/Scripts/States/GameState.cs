@@ -6,6 +6,8 @@ public abstract class GameState : ScriptableObject
 {
     [SerializeField]
     protected InputHandler inputHandler;
+    [SerializeField]
+    protected WorldGrid worldGrid;
 
     protected string stateName;
     public virtual string StateName { get { return stateName; } }

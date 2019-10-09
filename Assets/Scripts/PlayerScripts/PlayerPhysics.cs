@@ -15,6 +15,11 @@ public class PlayerPhysics : MonoBehaviour, IPhysics
 
     Vector2 moveDirection = Vector2.zero;
 
+    private void Start()
+    {
+        worldGrid.AddToWorld(this.gameObject);
+    }
+
     public Vector2 ComputeVelocity(Vector2 velocity, bool grounded, float maxSpeed)
     {
         Vector2 move = this.moveDirection;

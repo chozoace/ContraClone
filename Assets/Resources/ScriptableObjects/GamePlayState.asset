@@ -13,3 +13,4 @@ MonoBehaviour:
   m_Name: GamePlayState
   m_EditorClassIdentifier: 
   inputHandler: {fileID: 11400000, guid: 1029d605d10b0944a83f0ec0d58afe54, type: 2}
+  worldGrid: {fileID: 11400000, guid: 8da99cd7b0f161e47bf1b7c4eea53380, type: 2}
