@@ -24,7 +24,7 @@ public class Bullet : MonoBehaviour
         {
             if(collision.gameObject != owner)
             {
-                Debug.Log("Collision with: " + collision.gameObject.name);
+                //Debug.Log("Collision with: " + collision.gameObject.name);
                 DisableBullet();
                 //deal damage
             }

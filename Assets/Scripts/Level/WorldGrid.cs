@@ -87,7 +87,7 @@ public class WorldGrid : ScriptableObject
                     result.Add(partitions[x, y]);
                 }
             }
-        }        
+        }
 
         return result;
     }
