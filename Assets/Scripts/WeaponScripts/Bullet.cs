@@ -6,6 +6,8 @@ public class Bullet : MonoBehaviour
 {
     protected bool exists;
     public bool Exists { get { return exists; } }
+    private GameObject owner;
+    public GameObject Owner { get { return owner; } set { this.owner = value; } }
     protected SpriteRenderer spriteRenderer;
     protected Rigidbody2D rb2D;
 
@@ -18,26 +20,35 @@ public class Bullet : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        //Debug.Log("Bullet Hit");
-       // Destroy(this.gameObject);
+        if(exists)
+        {
+            if(collision.gameObject != owner)
+            {
+                Debug.Log("Collision with: " + collision.gameObject.name);
+                DisableBullet();
+                //deal damage
+            }
+        }
     }
 
     public void ReuseBullet(Vector2 newPosition, int damage, Vector2 speedVector)
     {
         exists = true;
         spriteRenderer.enabled = true;
+        this.GetComponent<CircleCollider2D>().enabled = true;
         transform.position = newPosition;
         GetComponent<Rigidbody2D>().velocity = speedVector;
     }
 
     private void OnBecameInvisible()
     {
-        disableBullet();
+        DisableBullet();
     }
 
-    private void disableBullet()
+    private void DisableBullet()
     {
         exists = false;
+        this.GetComponent<CircleCollider2D>().enabled = false;
         spriteRenderer.enabled = false;
         rb2D.velocity = Vector2.zero;
     }

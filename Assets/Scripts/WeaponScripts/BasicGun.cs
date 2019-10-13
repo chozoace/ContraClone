@@ -33,6 +33,7 @@ public class BasicGun : Gun
             if(createBullet)
             {
                 GameObject bullet = Object.Instantiate(bulletTypePrefab, bulletPosition, Quaternion.identity);
+                bullet.GetComponent<Bullet>().Owner = this.gameObject;
                 bullet.GetComponent<Rigidbody2D>().velocity = bulletDirection;
                 bulletList.Add(bullet.GetComponent<Bullet>());
             }
