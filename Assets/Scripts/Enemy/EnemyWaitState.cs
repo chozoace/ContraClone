@@ -19,7 +19,6 @@ public class EnemyWaitState : EnemyState
     }
     public override void UpdateState()
     {
-        Debug.Log("enemy wait");
         if(playerObject == null)
         {
             List<Partition> partitions = stateManager.WorldGrid.GetUpdatablePartitions(Camera.main.gameObject);

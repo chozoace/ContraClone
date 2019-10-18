@@ -17,7 +17,8 @@ GameObject:
   - component: {fileID: 2192333428586051198}
   - component: {fileID: 2192333428586051184}
   - component: {fileID: 2192333428586051199}
-  - component: {fileID: 2192333428586051185}
+  - component: {fileID: 1213794080}
+  - component: {fileID: 1213794081}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -203,12 +204,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f787a5bd71f49ea4c807bb16f20464e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fireRate: 0.4
+  fireRate: 1
   owner: {fileID: 2192333428586051184}
   bulletTypePrefab: {fileID: 4788858048224316623, guid: 9b66f1eb5d230b148ab67f71d10b8849,
     type: 3}
   bulletFireSpeed: 4
---- !u!114 &2192333428586051185
+--- !u!114 &1213794080
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -217,7 +218,19 @@ MonoBehaviour:
   m_GameObject: {fileID: 2192333428586051175}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 12b2dbb7c7f2abe449ba684d283768fa, type: 3}
+  m_Script: {fileID: 11500000, guid: 92e366faca489fd4685192da87de3dbe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   worldGrid: {fileID: 11400000, guid: 8da99cd7b0f161e47bf1b7c4eea53380, type: 2}
+--- !u!114 &1213794081
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2192333428586051175}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bacf7d3682855794ca060ac215e70e9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

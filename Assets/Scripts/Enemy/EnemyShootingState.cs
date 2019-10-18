@@ -30,7 +30,6 @@ public class EnemyShootingState : EnemyState
 
     public override void UpdateState()
     {
-        Debug.Log("enemy shoot");
         if (playerObject == null)
         {
             List<Partition> partitions = stateManager.WorldGrid.GetUpdatablePartitions(Camera.main.gameObject);
@@ -55,9 +54,7 @@ public class EnemyShootingState : EnemyState
             }
             else
             {
-                //Update shoot direction
                 UpdateShootDirection();
-                //begin shooting
                 if (isShooting == false)
                 {
                     stateManager.gameObject.GetComponent<Actor>().ExecuteAction(shootAction.getPressAction());
