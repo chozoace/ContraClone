@@ -24,7 +24,6 @@ public class GamePlayState : GameState
 
     public override void FixedUpdateState()
     {
-        partitions = worldGrid.GetUpdatablePartitions(Camera.main.gameObject);
         foreach (Partition partition in partitions)
         {
             for(int gameObjIndex = 0; gameObjIndex < partition.gameObjectList.Count; gameObjIndex++)
@@ -36,6 +35,7 @@ public class GamePlayState : GameState
                 }
             }
         }
+        partitions = worldGrid.GetUpdatablePartitions(Camera.main.gameObject);
     }
 
     public override void UpdateState()

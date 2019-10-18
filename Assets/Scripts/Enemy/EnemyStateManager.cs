@@ -4,19 +4,25 @@ using UnityEngine;
 
 public class EnemyStateManager : MonoBehaviour, IUpdateable
 {
-    //private Dictionary<EnemyStatesEnum, GameState> enemyStateMap;
+    private Dictionary<EnemyStatesEnum, EnemyState> enemyStateMap = new Dictionary<EnemyStatesEnum, EnemyState>();
 
     private EnemyState currentState;
     private EnemyState previousState;
 
+    [SerializeField]
+    private WorldGrid worldGrid;
+    public WorldGrid WorldGrid { get { return worldGrid; } }
+
     private void Start()
     {
-        //set current state
+        enemyStateMap.Add(EnemyStatesEnum.EnemyWait, new EnemyWaitState(this));
+        enemyStateMap.Add(EnemyStatesEnum.EnemyShoot, new EnemyShootingState(this));
+        ChangeState(EnemyStatesEnum.EnemyWait);
     }
 
-    public void ChangeState(EnemyState newState)
+    public void ChangeState(EnemyStatesEnum newStateEnum)
     {
-        //EnemyState newState = gameStateMap[newStateEnum];
+        EnemyState newState = enemyStateMap[newStateEnum];
 
         if (currentState != null)
             currentState.Exit();
@@ -28,7 +34,6 @@ public class EnemyStateManager : MonoBehaviour, IUpdateable
     public void UpdateState()
     {
         currentState?.UpdateState();
-        Debug.Log("enemy");
     }
 
     public void FixedUpdateState()
@@ -45,4 +50,9 @@ public class EnemyStateManager : MonoBehaviour, IUpdateable
     {
         FixedUpdateState();
     }
+}
+public enum EnemyStatesEnum
+{
+    EnemyWait,
+    EnemyShoot
 }
