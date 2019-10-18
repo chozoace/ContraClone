@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class ShooterObject : MonoBehaviour, IShooter
+public abstract class ShooterObject : MonoBehaviour, IShooter
 {
     [SerializeField]
     private SpriteRenderer spriteRenderer;
@@ -72,6 +72,16 @@ public class ShooterObject : MonoBehaviour, IShooter
     public void UpdateSelf()
     {
         equippedGun.updateShooting();
+    }
+
+    public Vector2 GetShootOrigin()
+    {
+        return shootOrigin;
+    }
+
+    public Vector2 GetShootDirection()
+    {
+        return shootDirection;
     }
 
     public void FixedUpdateSelf()

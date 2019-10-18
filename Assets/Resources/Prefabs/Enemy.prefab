@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 2192333428586051194}
   - component: {fileID: 2192333428586051196}
   - component: {fileID: 2192333428586051197}
-  - component: {fileID: 2192333428586051198}
+  - component: {fileID: 5938667898262152061}
   - component: {fileID: 2192333428586051184}
   - component: {fileID: 2192333428586051199}
   - component: {fileID: 1213794080}
@@ -160,7 +160,7 @@ MonoBehaviour:
   jumpTakeOffSpeed: 6
   minGroundNormalY: 0.65
   gravityModifier: 1.7
---- !u!114 &2192333428586051198
+--- !u!114 &5938667898262152061
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -169,7 +169,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2192333428586051175}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2d7144280ba4b1f4e8a9539afdaf9b14, type: 3}
+  m_Script: {fileID: 11500000, guid: 0c62e2bf15fa9d045815005cdea6fea4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   worldGrid: {fileID: 11400000, guid: 8da99cd7b0f161e47bf1b7c4eea53380, type: 2}

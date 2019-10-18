@@ -8,8 +8,7 @@ public abstract class Gun : MonoBehaviour
     protected float fireRate = 1.0f;
     protected float timeStamp;
     protected bool shooting = false;
-    [SerializeField]
-    protected ShooterObject owner;
+    protected IShooter owner;
     [SerializeField]
     protected GameObject bulletTypePrefab;
     [SerializeField]
@@ -20,8 +19,19 @@ public abstract class Gun : MonoBehaviour
     public void startShooting() { shooting = true; }
     public void stopShooting() { shooting = false; }
 
+    public void OnEnable()
+    {
+        owner = this.gameObject.GetComponent<IShooter>(); 
+    }
+
     //bug happens with steps:
     //1. shoot up
     //2. let go of up but keep shoot held
-    public void updateShooting() { if(shooting) shoot(owner.ShootOrigin, owner.ShootDirection); }
+    public void updateShooting()
+    {
+        if (shooting)
+        {
+            shoot(owner.GetShootOrigin(), owner.GetShootDirection());
+        }
+    }
 }

@@ -7,4 +7,6 @@ public interface IShooter : IUpdateable
     void StartShooting();
     void EndShooting();
     void UpdateShootDirection(Vector2 newShootDirection);
+    Vector2 GetShootOrigin();
+    Vector2 GetShootDirection();
 }
