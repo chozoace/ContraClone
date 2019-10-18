@@ -40,7 +40,7 @@ public class EnemyWaitState : EnemyState
         {
             if(Mathf.Abs(playerObject.transform.position.x - stateManager.gameObject.transform.position.x) < alertRange)
             {
-                stateManager.ChangeState(EnemyStatesEnum.EnemyShoot);
+                stateManager.ChangeState(TurretEnemyStateEnum.EnemyShoot.ToString());
             }
         }
     }

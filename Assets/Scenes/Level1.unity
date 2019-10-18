@@ -667,6 +667,37 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1034446286}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1213794079 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2192333428586051175, guid: 7352304e72c955d479316d3a23fdeb04,
+    type: 3}
+  m_PrefabInstance: {fileID: 2192333428051329832}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1213794080
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1213794079}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92e366faca489fd4685192da87de3dbe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  worldGrid: {fileID: 11400000, guid: 8da99cd7b0f161e47bf1b7c4eea53380, type: 2}
+--- !u!114 &1213794081
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1213794079}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bacf7d3682855794ca060ac215e70e9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1284026915 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9098863073592461582, guid: 37cec9d0a1d97ea44be7b1afb9e1c32e,
@@ -1379,5 +1410,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 2192333428586051199, guid: 7352304e72c955d479316d3a23fdeb04,
+        type: 3}
+      propertyPath: fireRate
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2192333428586051199, guid: 7352304e72c955d479316d3a23fdeb04,
+        type: 3}
+      propertyPath: bulletFireSpeed
+      value: 4
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 2192333428586051185, guid: 7352304e72c955d479316d3a23fdeb04, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 7352304e72c955d479316d3a23fdeb04, type: 3}

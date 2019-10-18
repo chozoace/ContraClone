@@ -47,6 +47,7 @@ public class ShooterObject : MonoBehaviour, IShooter
         }
 
         animator.SetInteger("aimY", (int)newShootDirection.y);
+        animator.SetInteger("aimX", (int)newShootDirection.x);
     }
 
     public void StartShooting()
