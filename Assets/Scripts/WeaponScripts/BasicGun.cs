@@ -11,7 +11,6 @@ public class BasicGun : Gun
 
     public override void shoot(Vector2 shootOrigin, Vector2 shootDirection)
     {
-        Vector2 bulletPosition = (Vector2)owner.transform.position + shootOrigin;
         Vector2 bulletDirection = new Vector2(shootDirection.x * bulletFireSpeed, shootDirection.y * (bulletFireSpeed - 1.10f));
 
         if (timeStamp <= Time.time)
@@ -25,14 +24,14 @@ public class BasicGun : Gun
                     if (!bulletObject.Exists)
                     {
                         createBullet = false;
-                        bulletObject.ReuseBullet(bulletPosition, 0, bulletDirection);
+                        bulletObject.ReuseBullet(shootOrigin, 0, bulletDirection);
                         break;
                     }
                 }
             }
             if(createBullet)
             {
-                GameObject bullet = Object.Instantiate(bulletTypePrefab, bulletPosition, Quaternion.identity);
+                GameObject bullet = Object.Instantiate(bulletTypePrefab, shootOrigin, Quaternion.identity);
                 bullet.GetComponent<Bullet>().Owner = this.gameObject;
                 bullet.GetComponent<Rigidbody2D>().velocity = bulletDirection;
                 bulletList.Add(bullet.GetComponent<Bullet>());

@@ -35,6 +35,11 @@ public class PhysicsObject : MonoBehaviour
     {
         rb2d = GetComponent<Rigidbody2D>();
         physicsComponent = GetComponent<IPhysics>();
+        if (physicsComponent == null)
+        {
+            throw new MissingComponentException("GameObject does not implement IPhysics");
+        }
+
         oldPos = this.gameObject.transform.position;
     }
 

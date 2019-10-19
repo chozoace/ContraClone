@@ -15,10 +15,10 @@ GameObject:
   - component: {fileID: 2192333428586051196}
   - component: {fileID: 2192333428586051197}
   - component: {fileID: 5938667898262152061}
-  - component: {fileID: 2192333428586051184}
   - component: {fileID: 2192333428586051199}
   - component: {fileID: 1213794080}
   - component: {fileID: 1213794081}
+  - component: {fileID: 2427777018344898745}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -176,22 +176,6 @@ MonoBehaviour:
   spriteRenderer: {fileID: 2192333428586051192}
   animator: {fileID: 2192333428586051194}
   physicsObject: {fileID: 2192333428586051197}
---- !u!114 &2192333428586051184
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2192333428586051175}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cb31e8b0a1c52ec49a10abb4320f92c3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  spriteRenderer: {fileID: 2192333428586051192}
-  animator: {fileID: 2192333428586051194}
-  physics: {fileID: 2192333428586051197}
-  equippedGun: {fileID: 2192333428586051199}
 --- !u!114 &2192333428586051199
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -205,7 +189,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fireRate: 1
-  owner: {fileID: 2192333428586051184}
   bulletTypePrefab: {fileID: 4788858048224316623, guid: 9b66f1eb5d230b148ab67f71d10b8849,
     type: 3}
   bulletFireSpeed: 4
@@ -234,3 +217,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bacf7d3682855794ca060ac215e70e9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2427777018344898745
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2192333428586051175}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b0ebc08c8858284aa95501275a21698, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spriteRenderer: {fileID: 2192333428586051192}
+  animator: {fileID: 2192333428586051194}
+  physics: {fileID: 2192333428586051197}
+  equippedGun: {fileID: 2192333428586051199}

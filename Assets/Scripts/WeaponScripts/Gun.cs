@@ -22,6 +22,11 @@ public abstract class Gun : MonoBehaviour
     public void OnEnable()
     {
         owner = this.gameObject.GetComponent<IShooter>(); 
+
+        if(owner == null)
+        {
+            throw new MissingComponentException("GameObject does not implement IShooter");
+        }
     }
 
     //bug happens with steps:
