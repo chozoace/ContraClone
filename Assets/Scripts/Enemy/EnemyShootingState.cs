@@ -6,7 +6,8 @@ public class EnemyShootingState : EnemyState
 {
     private GameObject playerObject;
     private float alertRange = 2f;
-    private float yAimThreshold = .5f;
+    private float yAimThreshold = .2f;
+    private float xAimThreshold = .2f;
     private bool isShooting = false;
     ActionContainer shootAction;
     private SpriteRenderer spriteRenderer;
