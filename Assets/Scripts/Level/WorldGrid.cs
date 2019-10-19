@@ -91,4 +91,23 @@ public class WorldGrid : ScriptableObject
 
         return result;
     }
+
+    public GameObject FindInWorldGridByTag(string tag)
+    {
+        GameObject result = null;
+        List<Partition> partitions = GetUpdatablePartitions(Camera.main.gameObject);
+        foreach (Partition partition in partitions)
+        {
+            for (int gameObjIndex = 0; gameObjIndex < partition.gameObjectList.Count; gameObjIndex++)
+            {
+                if (partition.gameObjectList[gameObjIndex].tag == tag)
+                {
+                    result = partition.gameObjectList[gameObjIndex];
+                    break;
+                }
+            }
+            if (result != null) break;
+        }
+        return result;
+    }
 }

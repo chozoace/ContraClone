@@ -21,19 +21,7 @@ public class EnemyWaitState : EnemyState
     {
         if(playerObject == null)
         {
-            List<Partition> partitions = stateManager.WorldGrid.GetUpdatablePartitions(Camera.main.gameObject);
-            foreach (Partition partition in partitions)
-            {
-                for (int gameObjIndex = 0; gameObjIndex < partition.gameObjectList.Count; gameObjIndex++)
-                {
-                    if(partition.gameObjectList[gameObjIndex].tag == "Player")
-                    {
-                        playerObject = partition.gameObjectList[gameObjIndex];
-                        break;
-                    }
-                }
-                if (playerObject != null) break;
-            }
+            playerObject = stateManager.WorldGrid.FindInWorldGridByTag("Player");
         }
         else
         {
