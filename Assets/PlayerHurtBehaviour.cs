@@ -18,12 +18,20 @@ public class PlayerHurtBehaviour : StateMachineBehaviour
     //OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
+        animator.gameObject.GetComponent<IShooter>().EndShooting();
         IActionable actor = animator.gameObject.GetComponent<IActionable>();
         actor.SetLockedActions(lockedStates);
 
         //make player jump
         actor.ExecuteAction(hitstunEnterAction);
         //start timer?
+        actor.StopHitstun();
+    }
+
+    private IEnumerator StopHitstun(Animator animator)
+    {
+        yield return new WaitForSeconds(1);
+        animator.SetBool("hitstun", false);
     }
 
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks

@@ -23,4 +23,16 @@ public abstract class Actor : MonoBehaviour, IActionable
     {
         this.lockedActions = lockedActions;
     }
+
+    public void StopHitstun()
+    {
+        StartCoroutine(StopHitstunCoroutine());
+    }
+
+    private IEnumerator StopHitstunCoroutine()
+    {
+        yield return new WaitForSeconds(.7f);
+        gameObject.GetComponent<Animator>().SetBool("hitstun", false);
+        //continue shooting if button is still being held
+    }
 }
