@@ -3,6 +3,6 @@ using System.Collections;
 
 public interface IDestructable
 {
-    void TakeDamage();
+    void TakeDamage(float damage);
     void OnDeath();
 }

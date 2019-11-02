@@ -15,4 +15,9 @@ public class MoveInputAxisAction : Action
             shooter.UpdateShootDirection(newDir);
         }
     }
+
+    public string getActionName()
+    {
+        return ActionNames.MoveInputAxisAction.Value;
+    }
 }

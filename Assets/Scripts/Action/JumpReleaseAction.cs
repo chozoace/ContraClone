@@ -11,4 +11,9 @@ public class JumpReleaseAction : Action
             physics.Velocity = new Vector2(physics.Velocity.x, physics.Velocity.y * .5f);
         }
     }
+
+    public string getActionName()
+    {
+        return ActionNames.JumpReleaseAction.Value;
+    }
 }

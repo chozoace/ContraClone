@@ -4,11 +4,23 @@ using UnityEngine;
 
 public abstract class Actor : MonoBehaviour, IActionable
 {
+    public List<string> lockedActions = new List<string>();
+
     public void ExecuteAction(Action action)
     {
-        if (action != null)
+        if (action != null && !lockedActions.Contains(action.getActionName()))
         {
             action.execute(this.gameObject);
         }
+    }
+
+    public List<string> GetLockedActions()
+    {
+        return lockedActions;
+    }
+
+    public void SetLockedActions(List<string> lockedActions)
+    {
+        this.lockedActions = lockedActions;
     }
 }

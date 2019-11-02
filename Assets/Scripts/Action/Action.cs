@@ -5,4 +5,5 @@ using UnityEngine;
 public interface Action
 {
     void execute(GameObject obj);
+    string getActionName();
 }

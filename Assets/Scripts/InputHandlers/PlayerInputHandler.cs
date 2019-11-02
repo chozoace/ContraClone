@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 [CreateAssetMenu(fileName = "PlayerInputHandler", menuName = "ScriptableObjects/PlayerInputHandler", order = 1)]
 public class PlayerInputHandler : InputHandler
@@ -49,7 +50,7 @@ public class PlayerInputHandler : InputHandler
         inputEvent.Raise(moveInputAxisAction);
     }
 }
-[System.Serializable]
+[Serializable]
 public struct PlayerControlsMapping
 {
     public KeyCode shootButton;

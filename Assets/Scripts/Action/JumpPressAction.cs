@@ -11,4 +11,9 @@ public class JumpPressAction : Action
             physics.Velocity = new Vector2(physics.Velocity.x, physics.jumpTakeOffSpeed);
         }
     }
+
+    public string getActionName()
+    {
+        return ActionNames.JumpPressAction.Value;
+    }
 }

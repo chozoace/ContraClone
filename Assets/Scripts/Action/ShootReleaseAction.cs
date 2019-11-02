@@ -11,4 +11,9 @@ public class ShootReleaseAction : Action
         else
             throw new MissingComponentException("GameObject does not implement IShooter");
     }
+    public string getActionName()
+    {
+        return ActionNames.ShootReleaseAction.Value;
+    }
+
 }
