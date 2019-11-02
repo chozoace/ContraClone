@@ -37,3 +37,29 @@ Actor
 	-takeDamage()
 
 EnemySpawner
+
+
+-----------------------
+
+Player states
+MOVEMENT STATES
+Standing (can shoot)
+	-Run (can shoot)
+	-Shoot
+	-Hurt
+Crouching (can shoot)
+	-Shoot
+	-Hurt (animation same as standing)
+Jumping (can shoot)
+Rolling
+Death
+	-Play death animation
+	-Respawn in new location OR reload level
+
+ACTIONS
+Gun shoot (with aim)
+Grenade throw
+Melee
+
+
+-------------------
