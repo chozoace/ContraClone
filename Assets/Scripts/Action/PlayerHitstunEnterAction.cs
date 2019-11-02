@@ -8,10 +8,7 @@ public class PlayerHitstunEnterAction : Action
     public void execute(GameObject obj)
     {
         PhysicsObject physics = obj.GetComponent<PhysicsObject>();
-        if (physics.IsGrounded)
-        {
-            physics.Velocity = new Vector2(physics.Velocity.x, hitstunJumpTakeOffSpeed);
-        }
+        physics.Velocity = new Vector2(physics.Velocity.x, hitstunJumpTakeOffSpeed);
     }
 
     public string getActionName()
