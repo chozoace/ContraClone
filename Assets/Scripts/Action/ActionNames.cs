@@ -12,4 +12,5 @@ public class ActionNames
     public static ActionNames ShootPressAction { get { return new ActionNames("shootPressAction"); } }
     public static ActionNames ShootReleaseAction { get { return new ActionNames("shootReleaseAction"); } }
     public static ActionNames MoveInputAxisAction { get { return new ActionNames("moveInputAxisAction"); } }
+    public static ActionNames PlayerHitstunEnterAction { get { return new ActionNames("playerHitstunEnterAction"); } }
 }

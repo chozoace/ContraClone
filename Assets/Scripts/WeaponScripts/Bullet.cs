@@ -11,6 +11,8 @@ public class Bullet : MonoBehaviour
     protected SpriteRenderer spriteRenderer;
     protected Rigidbody2D rb2D;
 
+    private float damage = 2;
+
     private void Awake()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
@@ -24,9 +26,9 @@ public class Bullet : MonoBehaviour
         {
             if(collision.gameObject != owner)
             {
+                collision.GetComponent<IDestructable>()?.TakeDamage(damage);
                 //Debug.Log("Collision with: " + collision.gameObject.name);
                 DisableBullet();
-                //deal damage
             }
         }
     }

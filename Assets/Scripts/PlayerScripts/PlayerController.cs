@@ -21,12 +21,12 @@ public class PlayerController : Actor, IDestructable
 
     public void TakeDamage(float damage)
     {
-        //modify player hp float
-        hp.RuntimeValue -= damage;
-        //set hitstun = true
-        animator.SetBool("hitstun", true);
-        //lock player actions
-
-        //make player jump
+        if (!animator.GetBool("hitstun"))
+        {
+            //modify player hp float
+            hp.RuntimeValue -= damage;
+            //set hitstun = true
+            animator.SetBool("hitstun", true);
+        }
     }
 }

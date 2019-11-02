@@ -199,6 +199,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 318cf036849e2a64b96854b66608e35b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lockedActions: []
+  hp: {fileID: 11400000, guid: 0430cff71123da6479fb01f779833cae, type: 2}
 --- !u!114 &5264065034797797847
 MonoBehaviour:
   m_ObjectHideFlags: 0
