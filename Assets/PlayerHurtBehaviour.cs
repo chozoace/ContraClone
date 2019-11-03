@@ -7,12 +7,15 @@ public class PlayerHurtBehaviour : StateMachineBehaviour
     private List<string> lockedStates = new List<string>();
     private Action hitstunEnterAction = new PlayerHitstunEnterAction();
 
+    private float knockbackDistance = 0.8f;
+
     private void Awake()
     {
         lockedStates.Add(ActionNames.JumpPressAction.Value);
         lockedStates.Add(ActionNames.JumpReleaseAction.Value);
         lockedStates.Add(ActionNames.ShootPressAction.Value);
         lockedStates.Add(ActionNames.ShootReleaseAction.Value);
+        lockedStates.Add(ActionNames.MoveInputAxisAction.Value);
     }
 
     //OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
@@ -25,13 +28,7 @@ public class PlayerHurtBehaviour : StateMachineBehaviour
         //make player jump
         actor.ExecuteAction(hitstunEnterAction);
         //start timer?
-        actor.StopHitstun();
-    }
-
-    private IEnumerator StopHitstun(Animator animator)
-    {
-        yield return new WaitForSeconds(1);
-        animator.SetBool("hitstun", false);
+        animator.gameObject.GetComponent<IDestructable>().StopHitstun();
     }
 
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks

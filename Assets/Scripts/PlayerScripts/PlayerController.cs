@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerController : Actor, IDestructable
 {
     private Animator animator;
+    private float hitstunDuration = 0.3f;
 
     [SerializeField]
     private FloatVariable hp;
@@ -23,10 +24,20 @@ public class PlayerController : Actor, IDestructable
     {
         if (!animator.GetBool("hitstun"))
         {
-            //modify player hp float
             hp.RuntimeValue -= damage;
-            //set hitstun = true
             animator.SetBool("hitstun", true);
         }
+    }
+
+    public void StopHitstun()
+    {
+        StartCoroutine(StopHitstunCoroutine());
+    }
+
+    private IEnumerator StopHitstunCoroutine()
+    {
+        yield return new WaitForSeconds(hitstunDuration);
+        gameObject.GetComponent<Animator>().SetBool("hitstun", false);
+        //continue shooting if button is still being held
     }
 }
