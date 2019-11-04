@@ -13,6 +13,19 @@ public class PlayerHitstunEnterAction : Action
 
         IPhysics physics = obj.GetComponent<IPhysics>();
         physics.SetMoveDirection(new Vector2(knockbackDistance * (physics.GetMoveDirection().x * -1), 0));
+
+        IShooter shooter = obj.GetComponent<IShooter>();
+        if (shooter != null)
+        {
+            if (physics.GetMoveDirection().x > 0)
+            {
+                shooter.UpdateShootDirection(new Vector2(1, shooter.GetShootDirection().y));
+            }
+            else if (physics.GetMoveDirection().x < 0)
+            {
+                shooter.UpdateShootDirection(new Vector2(-1, shooter.GetShootDirection().y));
+            }
+        }
     }
 
     public string getActionName()
