@@ -4,20 +4,7 @@ using UnityEngine;
 using System;
 
 [CreateAssetMenu]
-public class FloatVariable : ScriptableObject, ISerializationCallbackReceiver
+public class FloatVariable : ScriptableObject
 {
-    public float InitialValue;
-
-    [NonSerialized]
-    public float RuntimeValue;
-
-    void ISerializationCallbackReceiver.OnAfterDeserialize()
-    {
-        RuntimeValue = InitialValue;
-    }
-
-    void ISerializationCallbackReceiver.OnBeforeSerialize()
-    {
-
-    }
+    public float Value;
 }

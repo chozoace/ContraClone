@@ -18,4 +18,9 @@ public class PlayerPhysics : BasePhysics
 
         return new Vector2(move.x * maxSpeed, velocity.y);
     }
+
+    public override void OnDeath()
+    {
+        Debug.Log("player death");
+    }
 }

@@ -21,6 +21,7 @@ public abstract class BasePhysics : MonoBehaviour, IPhysics
     }
 
     public abstract Vector2 ComputeVelocity(Vector2 velocity, bool grounded, float maxSpeed);
+    public abstract void OnDeath();
 
     public void FixedUpdateSelf()
     {

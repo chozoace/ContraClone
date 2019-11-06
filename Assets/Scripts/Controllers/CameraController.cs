@@ -4,12 +4,10 @@ using UnityEngine;
 
 public class CameraController : MonoBehaviour
 {
-    //needs to follow player until reach scene end
     [SerializeField]
     GameObject player;
 
     [SerializeField]
-    //farthest distance x player can walk before camera follows
     float xDeadZone;
     [SerializeField]
     float yDeadZone;
@@ -17,19 +15,19 @@ public class CameraController : MonoBehaviour
     [SerializeField]
     WorldGrid worldGrid;
 
-    private Camera camera;
-
     private Vector2 cameraSize;
 
     private void Start()
     {
-        camera = Camera.main;
-        cameraSize = new Vector2(camera.orthographicSize * 2 * camera.aspect, camera.orthographicSize * 2);
+        cameraSize = new Vector2(Camera.main.orthographicSize * 2 * Camera.main.aspect, Camera.main.orthographicSize * 2);
     }
 
     private void Update()
     {
-        FollowPlayer();
+        if (player != null)
+        {
+            FollowPlayer();
+        }
     }
 
     private void FollowPlayer()

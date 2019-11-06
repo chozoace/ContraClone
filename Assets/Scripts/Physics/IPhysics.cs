@@ -9,4 +9,5 @@ public interface IPhysics : IUpdateable
     Vector2 GetMoveDirection();
     void SetMoveDirection(Vector2 newDir);
     void UpdateGridPosition(Vector2 oldPos);
+    void OnDeath();
 }

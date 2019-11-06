@@ -12,4 +12,9 @@ public class EnemyPhysics : BasePhysics
 
         return new Vector2(move.x * maxSpeed, velocity.y);
     }
+
+    public override void OnDeath()
+    {
+        Debug.Log("EnemyDeath");
+    }
 }

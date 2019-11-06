@@ -4,7 +4,7 @@ using UnityEngine;
 
 public abstract class Actor : MonoBehaviour, IActionable
 {
-    public List<string> lockedActions = new List<string>();
+    private List<string> lockedActions = new List<string>();
 
     public void ExecuteAction(Action action)
     {
