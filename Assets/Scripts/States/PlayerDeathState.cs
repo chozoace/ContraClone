@@ -6,7 +6,12 @@ using System.Collections.Generic;
 public class PlayerDeathState : GameState
 {
     List<Partition> partitions = new List<Partition>();
-    public GameEventListener listener;
+    public GameStateManager gameStateManager;
+
+    public override void ClearReferences()
+    {
+        partitions = new List<Partition>();
+    }
 
     private void OnEnable()
     {
@@ -26,6 +31,7 @@ public class PlayerDeathState : GameState
     public void BeginLevelReset()
     {
         Debug.Log("begin level reset");
+        gameStateManager.RestartGameStateReferences();
         Application.LoadLevel(Application.loadedLevel);
     }
 

@@ -14,3 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inputHandler: {fileID: 11400000, guid: a8278994451f2d849bbc2fef64a6f88d, type: 2}
   worldGrid: {fileID: 11400000, guid: 8da99cd7b0f161e47bf1b7c4eea53380, type: 2}
+  gameStateManager: {fileID: 11400000, guid: c1649003067184146a7a755fe3ed8002, type: 2}

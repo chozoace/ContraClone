@@ -7,6 +7,11 @@ public class GamePlayState : GameState
 {
     List<Partition> partitions = new List<Partition>();
 
+    public override void ClearReferences()
+    {
+        partitions = new List<Partition>();
+    }
+
     private void OnEnable()
     {
         this.stateName = "GamePlayState";

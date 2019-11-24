@@ -19,7 +19,6 @@ public class GameStateManager : ScriptableObject
     {
         gameStateMap = new Dictionary<GameStatesEnum, GameState>();
         gameStateMap.Add(GameStatesEnum.GamePlayState, gamePlayState);
-        gameStateMap.Add(GameStatesEnum.PauseState, null);
         gameStateMap.Add(GameStatesEnum.PlayerDeathState, playerDeathState);
     }
 
@@ -42,6 +41,14 @@ public class GameStateManager : ScriptableObject
     public void FixedUpdateState()
     {
         currentGameState.FixedUpdateState();
+    }
+
+    public void RestartGameStateReferences()
+    {
+        foreach(KeyValuePair<GameStatesEnum, GameState> entry in gameStateMap)
+        {
+            entry.Value.ClearReferences();
+        }
     }
 }
 public enum GameStatesEnum
