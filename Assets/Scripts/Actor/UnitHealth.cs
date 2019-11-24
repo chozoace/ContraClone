@@ -40,7 +40,7 @@ public class UnitHealth : MonoBehaviour, IDestructable
             if (hp.Value <= 0)
             {
                 deathEvent.Invoke();
-                //animator.SetBool("death", true);
+                animator.SetBool("death", true);
             }
 
             animator.SetBool("hitstun", true);

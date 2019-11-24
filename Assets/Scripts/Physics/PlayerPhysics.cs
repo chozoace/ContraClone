@@ -23,5 +23,6 @@ public class PlayerPhysics : BasePhysics
     {
         Debug.Log("player death");
         PhysicsEnabled = false;
+        
     }
 }
