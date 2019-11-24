@@ -27,7 +27,7 @@ public class EnemyWaitState : EnemyState
         else
         {
             if(Mathf.Abs(playerObject.transform.position.x - stateManager.gameObject.transform.position.x) < alertRange
-                && playerObject.GetComponent<IDestructable>().getHp() > 0f)
+                && this.stateManager.playerHp.Value > 0f)
             {
                 stateManager.ChangeState(TurretEnemyStateEnum.EnemyShoot.ToString());
             }

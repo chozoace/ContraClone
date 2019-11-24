@@ -9,6 +9,8 @@ public abstract class EnemyStateManager : MonoBehaviour, IUpdateable
     protected EnemyState currentState;
     protected EnemyState previousState;
 
+    public FloatReference playerHp;
+
     [SerializeField]
     protected WorldGrid worldGrid;
     public WorldGrid WorldGrid { get { return worldGrid; } }

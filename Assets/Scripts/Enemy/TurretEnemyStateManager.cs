@@ -8,6 +8,7 @@ public class TurretEnemyStateManager : EnemyStateManager
     {
         enemyStateMap.Add(TurretEnemyStateEnum.EnemyWait.ToString(), new EnemyWaitState(this));
         enemyStateMap.Add(TurretEnemyStateEnum.EnemyShoot.ToString(), new EnemyShootingState(this));
+        enemyStateMap.Add(TurretEnemyStateEnum.EnemyDeath.ToString(), new EnemyDeathState(this));
         ChangeState(TurretEnemyStateEnum.EnemyWait.ToString());
     }
     
@@ -15,5 +16,6 @@ public class TurretEnemyStateManager : EnemyStateManager
 public enum TurretEnemyStateEnum
 {
     EnemyWait,
-    EnemyShoot
+    EnemyShoot,
+    EnemyDeath
 }

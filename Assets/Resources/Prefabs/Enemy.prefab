@@ -19,6 +19,7 @@ GameObject:
   - component: {fileID: 1213794080}
   - component: {fileID: 1213794081}
   - component: {fileID: 2427777018344898745}
+  - component: {fileID: 882733891}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -204,6 +205,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92e366faca489fd4685192da87de3dbe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerHp:
+    useConstant: 0
+    constantValue: 0
+    variable: {fileID: 11400000, guid: 0430cff71123da6479fb01f779833cae, type: 2}
   worldGrid: {fileID: 11400000, guid: 8da99cd7b0f161e47bf1b7c4eea53380, type: 2}
 --- !u!114 &1213794081
 MonoBehaviour:
@@ -233,3 +238,25 @@ MonoBehaviour:
   animator: {fileID: 2192333428586051194}
   physics: {fileID: 2192333428586051197}
   equippedGun: {fileID: 2192333428586051199}
+--- !u!114 &882733891
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2192333428586051175}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f2703c4ec0ba16459f271c9fdfd7c27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp:
+    useConstant: 1
+    constantValue: 4
+    variable: {fileID: 0}
+  startingHp: {fileID: 11400000, guid: be72e4e82e2be9d47aeb545ed5654036, type: 2}
+  deathEvent:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null

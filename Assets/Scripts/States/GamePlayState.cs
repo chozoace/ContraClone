@@ -33,7 +33,7 @@ public class GamePlayState : GameState
         {
             for(int gameObjIndex = 0; gameObjIndex < partition.gameObjectList.Count; gameObjIndex++)
             {
-                IUpdateable[] list = partition.gameObjectList[gameObjIndex].GetComponents<IUpdateable>();
+                IUpdateable[] list = partition.gameObjectList[gameObjIndex]?.GetComponents<IUpdateable>();
                 for (int i = 0; i < list.Length; i++)
                 {
                     list[i].FixedUpdateSelf();
@@ -50,7 +50,7 @@ public class GamePlayState : GameState
         {
             for (int gameObjIndex = 0; gameObjIndex < partition.gameObjectList.Count; gameObjIndex++)
             {
-                IUpdateable[] list = partition.gameObjectList[gameObjIndex].GetComponents<IUpdateable>();
+                IUpdateable[] list = partition.gameObjectList[gameObjIndex]?.GetComponents<IUpdateable>();
                 for (int i = 0; i < list.Length; i++)
                 {
                     list[i].UpdateSelf();

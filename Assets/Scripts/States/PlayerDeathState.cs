@@ -44,7 +44,7 @@ public class PlayerDeathState : GameState
                 IUpdateable[] list = partition.gameObjectList[gameObjIndex].GetComponents<IUpdateable>();
                 for (int i = 0; i < list.Length; i++)
                 {
-                    list[i].FixedUpdateSelf();
+                    list[i]?.FixedUpdateSelf();
                 }
             }
         }
@@ -61,7 +61,7 @@ public class PlayerDeathState : GameState
                 IUpdateable[] list = partition.gameObjectList[gameObjIndex].GetComponents<IUpdateable>();
                 for (int i = 0; i < list.Length; i++)
                 {
-                    list[i].UpdateSelf();
+                    list[i]?.UpdateSelf();
                 }
             }
         }

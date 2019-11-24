@@ -187,7 +187,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 989083540, guid: 52e50b376a6c71244adeee9ba6470531, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 52e50b376a6c71244adeee9ba6470531, type: 3}
 --- !u!1 &407955805
 GameObject:
@@ -568,11 +569,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2192333428586051199, guid: 7352304e72c955d479316d3a23fdeb04,
-        type: 3}
-      propertyPath: fireRate
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7352304e72c955d479316d3a23fdeb04, type: 3}
 --- !u!1 &770607416
@@ -817,6 +813,39 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 989083530}
         m_MethodName: OnDeath
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+--- !u!114 &989083529
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 989083527}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37278f5250ebed147bec51173c72a064, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp:
+    useConstant: 0
+    constantValue: 0
+    variable: {fileID: 11400000, guid: 0430cff71123da6479fb01f779833cae, type: 2}
+  startingHp: {fileID: 11400000, guid: 1dad3aa8b3ba30e4c85b012278e05737, type: 2}
+  deathEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: 5e9a8f71aebf8d248b2f8d0bc41b9c8f, type: 2}
+        m_MethodName: Raise
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

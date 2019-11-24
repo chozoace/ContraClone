@@ -48,6 +48,13 @@ public class WorldGrid : ScriptableObject
         int cellY = (int)(((gameObject.GetComponent<Rigidbody2D>().position.y - gridOffset.y) * -1) / partitionHeight);
         partitions[cellX, cellY].Add(gameObject);
     }
+
+    public void RemoveFromWorld(GameObject gameObject)
+    {
+        int cellX = (int)((gameObject.GetComponent<Rigidbody2D>().position.x - gridOffset.x) / partitionWidth);
+        int cellY = (int)(((gameObject.GetComponent<Rigidbody2D>().position.y - gridOffset.y) * -1) / partitionHeight);
+        partitions[cellX, cellY].Remove(gameObject);
+    }
     
     public void Move(GameObject gameObject, Vector2 oldPos)
     {

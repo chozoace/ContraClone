@@ -11,7 +11,7 @@ public class Bullet : MonoBehaviour
     protected SpriteRenderer spriteRenderer;
     protected Rigidbody2D rb2D;
 
-    private float damage = 2;
+    public float damage = 2;
 
     private void Awake()
     {
