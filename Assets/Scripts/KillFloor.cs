@@ -7,7 +7,6 @@ public class KillFloor : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("enter");
         collision.GetComponent<IDestructable>()?.TakeDamage(damage);
     }
 }
