@@ -21,11 +21,13 @@ public class EnemyWaitState : EnemyState
     {
         if(playerObject == null)
         {
+            //some kind of find nearest target?
             playerObject = stateManager.WorldGrid.FindInWorldGridByTag("Player");
         }
         else
         {
-            if(Mathf.Abs(playerObject.transform.position.x - stateManager.gameObject.transform.position.x) < alertRange)
+            if(Mathf.Abs(playerObject.transform.position.x - stateManager.gameObject.transform.position.x) < alertRange
+                && playerObject.GetComponent<IDestructable>().getHp() > 0f)
             {
                 stateManager.ChangeState(TurretEnemyStateEnum.EnemyShoot.ToString());
             }

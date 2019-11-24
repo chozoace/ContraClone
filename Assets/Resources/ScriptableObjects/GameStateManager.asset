@@ -13,3 +13,4 @@ MonoBehaviour:
   m_Name: GameStateManager
   m_EditorClassIdentifier: 
   gamePlayState: {fileID: 11400000, guid: b27ff22d43e47b740b955579bd384cc7, type: 2}
+  playerDeathState: {fileID: 11400000, guid: 00de148b976740142896af1425a1fd98, type: 2}

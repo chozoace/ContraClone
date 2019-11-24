@@ -6,4 +6,5 @@ public interface IDestructable
     void TakeDamage(float damage);
     void OnDeath();
     void StopHitstun();
+    float getHp();
 }

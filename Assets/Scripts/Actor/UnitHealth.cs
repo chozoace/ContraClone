@@ -26,6 +26,11 @@ public class UnitHealth : MonoBehaviour, IDestructable
         hp.Value = startingHp.Value;
     }
 
+    public float getHp()
+    {
+        return hp.Value;
+    }
+
     public void OnDeath()
     {
         
@@ -41,6 +46,7 @@ public class UnitHealth : MonoBehaviour, IDestructable
             {
                 deathEvent.Invoke();
                 animator.SetBool("death", true);
+                animator.SetBool("playDeathAnimation", true);
             }
 
             animator.SetBool("hitstun", true);

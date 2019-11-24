@@ -6,6 +6,7 @@ using System.Collections.Generic;
 public class PlayerDeathState : GameState
 {
     List<Partition> partitions = new List<Partition>();
+    public GameEventListener listener;
 
     private void OnEnable()
     {
@@ -20,6 +21,12 @@ public class PlayerDeathState : GameState
     public override void Exit()
     {
 
+    }
+
+    public void BeginLevelReset()
+    {
+        Debug.Log("begin level reset");
+        Application.LoadLevel(Application.loadedLevel);
     }
 
     public override void FixedUpdateState()
