@@ -20,6 +20,7 @@ GameObject:
   - component: {fileID: 5264065034797797848}
   - component: {fileID: 5264065034797797849}
   - component: {fileID: 5264065034797797850}
+  - component: {fileID: 989083540}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -199,8 +200,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 318cf036849e2a64b96854b66608e35b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lockedActions: []
-  hp: {fileID: 11400000, guid: 0430cff71123da6479fb01f779833cae, type: 2}
 --- !u!114 &5264065034797797847
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -262,3 +261,36 @@ MonoBehaviour:
   animator: {fileID: 5264065033775886184}
   physics: {fileID: 5264065033775886185}
   equippedGun: {fileID: 5264065034797797849}
+--- !u!114 &989083540
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5264065033775886178}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d9d7fe85d8377a40a41d53f7faa6a40, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp:
+    useConstant: 0
+    constantValue: 0
+    variable: {fileID: 11400000, guid: 0430cff71123da6479fb01f779833cae, type: 2}
+  startingHp: {fileID: 11400000, guid: 1dad3aa8b3ba30e4c85b012278e05737, type: 2}
+  deathEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: 5e9a8f71aebf8d248b2f8d0bc41b9c8f, type: 2}
+        m_MethodName: Raise
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
