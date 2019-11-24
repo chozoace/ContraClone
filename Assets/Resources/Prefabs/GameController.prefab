@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4799376683719516707}
   - component: {fileID: 4799376683719516704}
   - component: {fileID: 4799376683719516705}
+  - component: {fileID: 1545421235}
   m_Layer: 0
   m_Name: GameController
   m_TagString: UpdateManager
@@ -60,3 +61,32 @@ MonoBehaviour:
   worldGrid: {fileID: 11400000, guid: 8da99cd7b0f161e47bf1b7c4eea53380, type: 2}
   topLeftPosition: {fileID: 0}
   bottomRightPosition: {fileID: 0}
+--- !u!114 &1545421235
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4799376683719516706}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f177a90c793e5ee428321d351cd2da20, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event: {fileID: 11400000, guid: b6871eaaceffba64ca8aa3f6d1a9a5bb, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: 00de148b976740142896af1425a1fd98, type: 2}
+        m_MethodName: BeginLevelReset
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
