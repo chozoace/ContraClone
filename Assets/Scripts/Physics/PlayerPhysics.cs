@@ -21,7 +21,6 @@ public class PlayerPhysics : BasePhysics
 
     public override void OnDeath()
     {
-        Debug.Log("player death");
         PhysicsEnabled = false;
         
     }

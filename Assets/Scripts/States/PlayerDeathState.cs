@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 
+[CreateAssetMenu(fileName = "PlayerDeathState", menuName = "ScriptableObjects/GameStates/PlayerDeathState", order = 2)]
 public class PlayerDeathState : GameState
 {
     List<Partition> partitions = new List<Partition>();
