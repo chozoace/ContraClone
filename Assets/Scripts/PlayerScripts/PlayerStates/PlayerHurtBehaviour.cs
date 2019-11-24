@@ -4,18 +4,18 @@ using UnityEngine;
 
 public class PlayerHurtBehaviour : StateMachineBehaviour
 {
-    private List<string> lockedStates = new List<string>();
+    private List<string> lockedActions = new List<string>();
     private Action hitstunEnterAction = new PlayerHitstunEnterAction();
 
     private float knockbackDistance = 0.8f;
 
     private void Awake()
     {
-        lockedStates.Add(ActionNames.JumpPressAction.Value);
-        lockedStates.Add(ActionNames.JumpReleaseAction.Value);
-        lockedStates.Add(ActionNames.ShootPressAction.Value);
-        lockedStates.Add(ActionNames.ShootReleaseAction.Value);
-        lockedStates.Add(ActionNames.MoveInputAxisAction.Value);
+        lockedActions.Add(ActionNames.JumpPressAction.Value);
+        lockedActions.Add(ActionNames.JumpReleaseAction.Value);
+        lockedActions.Add(ActionNames.ShootPressAction.Value);
+        lockedActions.Add(ActionNames.ShootReleaseAction.Value);
+        lockedActions.Add(ActionNames.MoveInputAxisAction.Value);
     }
 
     //OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
@@ -23,7 +23,7 @@ public class PlayerHurtBehaviour : StateMachineBehaviour
     {
         animator.gameObject.GetComponent<IShooter>().EndShooting();
         IActionable actor = animator.gameObject.GetComponent<IActionable>();
-        actor.SetLockedActions(lockedStates);
+        actor.SetLockedActions(lockedActions);
 
         //make player jump
         actor.ExecuteAction(hitstunEnterAction);

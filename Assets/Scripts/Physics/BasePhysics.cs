@@ -14,6 +14,7 @@ public abstract class BasePhysics : MonoBehaviour, IPhysics
     protected PhysicsObject physicsObject;
 
     protected Vector2 moveDirection = Vector2.zero;
+    public bool PhysicsEnabled { get; set; } = true;
 
     void Start()
     {
@@ -25,7 +26,8 @@ public abstract class BasePhysics : MonoBehaviour, IPhysics
 
     public void FixedUpdateSelf()
     {
-        physicsObject.PhysicsFixedUpdate();
+        if(PhysicsEnabled)
+            physicsObject.PhysicsFixedUpdate();
     }
 
     public Vector2 GetMoveDirection()
@@ -50,6 +52,7 @@ public abstract class BasePhysics : MonoBehaviour, IPhysics
 
     public void UpdateSelf()
     {
-        physicsObject.PhysicsUpdate();
+        if (PhysicsEnabled)
+            physicsObject.PhysicsUpdate();
     }
 }

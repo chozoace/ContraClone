@@ -28,7 +28,7 @@ public class UnitHealth : MonoBehaviour, IDestructable
 
     public void OnDeath()
     {
-        deathEvent.Invoke();
+        
     }
 
     public void TakeDamage(float damage)
@@ -39,7 +39,8 @@ public class UnitHealth : MonoBehaviour, IDestructable
 
             if (hp.Value <= 0)
             {
-                OnDeath();
+                deathEvent.Invoke();
+                //animator.SetBool("death", true);
             }
 
             animator.SetBool("hitstun", true);
