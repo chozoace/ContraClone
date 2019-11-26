@@ -20,12 +20,14 @@ public class WorldGrid : ScriptableObject
 
     private void OnEnable()
     {
-        partitionHeight = (Camera.main.orthographicSize * 2);
-        partitionWidth = (Camera.main.orthographicSize * 2 * Camera.main.aspect);
+        
     }
 
     public void CreateGrid(Vector2 topLeftCorner, Vector2 bottomRightCorner)
     {
+        partitionHeight = (Camera.main.orthographicSize * 2);
+        partitionWidth = (Camera.main.orthographicSize * 2 * Camera.main.aspect);
+
         gridOffset = topLeftCorner;
         gridWidth = Mathf.Abs(bottomRightCorner.x - topLeftCorner.x);
         gridHeight = Mathf.Abs(bottomRightCorner.y - topLeftCorner.y);
