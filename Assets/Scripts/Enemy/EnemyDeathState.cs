@@ -7,6 +7,7 @@ public class EnemyDeathState : EnemyState
 
     public override void Enter()
     {
+        stateManager.gameObject.GetComponent<IPhysics>().OnDeath();
     }
 
     public override void Exit()

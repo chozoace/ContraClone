@@ -24,7 +24,7 @@ public class Bullet : MonoBehaviour
     {
         if(exists)
         {
-            if(collision.gameObject != owner)
+            if(collision.gameObject != owner && collision.gameObject.GetComponent<Bullet>() == null)
             {
                 collision.GetComponent<IDestructable>()?.TakeDamage(damage);
                 //Debug.Log("Collision with: " + collision.gameObject.name);

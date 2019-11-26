@@ -15,6 +15,6 @@ public class EnemyPhysics : BasePhysics
 
     public override void OnDeath()
     {
-        Debug.Log("EnemyDeath");
+        PhysicsEnabled = false;
     }
 }
