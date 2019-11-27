@@ -498,7 +498,7 @@ PrefabInstance:
     - target: {fileID: 5177691176031775126, guid: 90cb1025b2fe46143b1b25f7ad0ea344,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 16.31
+      value: 16.474
       objectReference: {fileID: 0}
     - target: {fileID: 5177691176031775126, guid: 90cb1025b2fe46143b1b25f7ad0ea344,
         type: 3}
@@ -580,6 +580,11 @@ PrefabInstance:
       propertyPath: m_Color.b
       value: 0.93333334
       objectReference: {fileID: 0}
+    - target: {fileID: 5177691176031775209, guid: 90cb1025b2fe46143b1b25f7ad0ea344,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: 52181d64a28143b4db5606406215657e, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 90cb1025b2fe46143b1b25f7ad0ea344, type: 3}
 --- !u!1001 &1050318106
@@ -1079,16 +1084,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 815714886783727072, guid: 52e50b376a6c71244adeee9ba6470531,
-        type: 3}
-      propertyPath: fireRate
-      value: 0.35
-      objectReference: {fileID: 0}
-    - target: {fileID: 815714886783727072, guid: 52e50b376a6c71244adeee9ba6470531,
-        type: 3}
-      propertyPath: bulletFireSpeed
-      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 52e50b376a6c71244adeee9ba6470531, type: 3}
