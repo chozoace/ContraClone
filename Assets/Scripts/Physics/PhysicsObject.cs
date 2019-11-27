@@ -12,7 +12,7 @@ public class PhysicsObject : MonoBehaviour
     private Vector2 oldPos = Vector2.zero;
     public Vector2 OldPos { get { return oldPos; } set { oldPos = value; } }
 
-    public float minGroundNormalY = .65f;
+    public float minGroundNormalY = .2f;
     public float gravityModifier = 1f;
 
     private Vector2 targetVelocity;

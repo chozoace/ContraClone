@@ -11,6 +11,7 @@ public class PlayerPhysics : BasePhysics
         if (flipSprite)
         {
             spriteRenderer.flipX = !spriteRenderer.flipX;
+            //GetComponent<CapsuleCollider2D>().offset = new Vector2(GetComponent<CapsuleCollider2D>().offset.x * -1, GetComponent<CapsuleCollider2D>().offset.y);
         }
 
         animator.SetBool("grounded", grounded);
