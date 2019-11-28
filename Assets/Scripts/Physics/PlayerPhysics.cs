@@ -6,14 +6,14 @@ public class PlayerPhysics : BasePhysics
     public override Vector2 ComputeVelocity(Vector2 velocity, bool grounded, float maxSpeed)
     {
         Vector2 move = this.moveDirection;
-
-        bool flipSprite = spriteRenderer.flipX ? (move.x > 0.01f) : (move.x < -0.01f);
+        
+        bool flipSprite = transform.rotation.eulerAngles.y == 180 ? (move.x > 0.01f) : (move.x < -0.01f);
         if (flipSprite)
         {
-            spriteRenderer.flipX = !spriteRenderer.flipX;
-            //GetComponent<CapsuleCollider2D>().offset = new Vector2(GetComponent<CapsuleCollider2D>().offset.x * -1, GetComponent<CapsuleCollider2D>().offset.y);
+            float yRot = transform.rotation.y == 0 ? 180f : 0f;
+            transform.localRotation = Quaternion.Euler(0, yRot, 0);
         }
-
+        
         animator.SetBool("grounded", grounded);
         animator.SetFloat("velocityX", Mathf.Abs(velocity.x) / maxSpeed);
 

@@ -8,10 +8,12 @@ public abstract class BaseShooterScript : MonoBehaviour, IShooter
     [SerializeField]
     protected Animator animator;
     [SerializeField]
-    protected PhysicsObject physics;
-    
+    protected PhysicsObject physics;    
     [SerializeField]
     protected Gun equippedGun;
+    [SerializeField]
+    protected GameObject shootOriginObject;
+
     protected bool canShoot = true;
     protected Vector2 shootDirection = new Vector2(1, 0);
     public Vector2 ShootDirection { get { return shootDirection; } }
