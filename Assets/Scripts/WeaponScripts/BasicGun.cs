@@ -11,7 +11,13 @@ public class BasicGun : Gun
 
     public override void shoot(Vector2 shootOrigin, Vector2 shootDirection)
     {
-        Vector2 bulletDirection = new Vector2(shootDirection.x * bulletFireSpeed, shootDirection.y * (bulletFireSpeed - 1.10f));
+        Vector2 modifiedBulletFireSpeed = new Vector2(bulletFireSpeed, bulletFireSpeed);
+        Vector2 bulletDirection = new Vector2(shootDirection.normalized.x * modifiedBulletFireSpeed.x, shootDirection.normalized.y * modifiedBulletFireSpeed.y);
+        if (Mathf.Abs(shootDirection.x) == 1 && Mathf.Abs(shootDirection.y) == 1)
+        {
+            Vector2 modifiedAngle = new Vector2(Mathf.Cos(angleModifier * Mathf.Deg2Rad), Mathf.Sin(angleModifier * Mathf.Deg2Rad)).normalized;
+            bulletDirection = new Vector2(modifiedBulletFireSpeed.x * modifiedAngle.x * shootDirection.x, modifiedBulletFireSpeed.y * modifiedAngle.y * shootDirection.y);
+        }       
 
         if (timeStamp <= Time.time)
         {

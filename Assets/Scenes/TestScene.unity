@@ -1602,6 +1602,21 @@ PrefabInstance:
       propertyPath: m_Constraints
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 815714886783727072, guid: 52e50b376a6c71244adeee9ba6470531,
+        type: 3}
+      propertyPath: angleModifier
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 815714886783727072, guid: 52e50b376a6c71244adeee9ba6470531,
+        type: 3}
+      propertyPath: angleModifier.x
+      value: 45
+      objectReference: {fileID: 0}
+    - target: {fileID: 815714886783727072, guid: 52e50b376a6c71244adeee9ba6470531,
+        type: 3}
+      propertyPath: angleModifier.y
+      value: 45
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 52e50b376a6c71244adeee9ba6470531, type: 3}
 --- !u!1001 &9098863072834648388

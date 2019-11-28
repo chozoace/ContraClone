@@ -4,8 +4,8 @@ using UnityEngine;
 
 public abstract class Gun : MonoBehaviour
 {
-    [SerializeField]
-    protected float fireRate = 1.0f;
+    public float fireRate = 1.0f;
+    public float angleModifier;
     protected float timeStamp;
     protected bool shooting = false;
     protected IShooter owner;
