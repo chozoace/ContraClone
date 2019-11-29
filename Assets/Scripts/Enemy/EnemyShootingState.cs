@@ -76,6 +76,7 @@ public class EnemyShootingState : EnemyState
             shooter.UpdateShootDirection(newDir);
         }
 
+        //change this to 180 rotation
         bool flipSprite = spriteRenderer.flipX ? (newDir.x > 0) : (newDir.x <= 0);
         if (flipSprite)
         {

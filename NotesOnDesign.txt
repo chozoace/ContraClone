@@ -63,3 +63,44 @@ Melee
 
 
 -------------------
+
+Taking Damage (cuphead style)
+1. Fire off PlayerDeathEvent
+2. Player will enter death state via animation state change
+3. In player death behaviour controller
+	-Before: Change game state to player death state
+	-During: play death animation
+	-Ater: player lingers in death state, menu comes up
+
+PlayerDeathState
+Start: update same list of objects as gameplay update
+Update: UpdateStates
+End: Just regular transition
+
+off y -.08
+size x 0.2
+size y 0.13
+
+---------------------
+
+Editable Gun values
+-Bullet speed, fire rate, bullet type, damage
+-Shoot Origin should be an empty gameobject relative to player
+	-animations change it's position
+	-Also update shoot direction
+
+	
+angled shooting
+30 degrees = .33
+
+-----------------------
+Reusable enemy states (might be behaviour scripts now)
+Wait
+Attack
+Patrol
+
+
+
+
+
+
