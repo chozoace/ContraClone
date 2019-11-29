@@ -5,7 +5,6 @@ public class PlayerShooterScript : BaseShooterScript
 {
     public override void UpdateShootDirection(Vector2 newShootDirection)
     {
-
         //shooting straight up idle
         if (newShootDirection.x != 0 || newShootDirection.y == 1)
         {
