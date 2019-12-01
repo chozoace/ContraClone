@@ -31,12 +31,13 @@ public class GamePlayState : GameState
     {
         foreach (Partition partition in partitions)
         {
-            for(int gameObjIndex = 0; gameObjIndex < partition.gameObjectList.Count; gameObjIndex++)
+            //kept as a for loop, accessing a list when something gets removed triggers error
+            for (int gameObjIndex = 0; gameObjIndex < partition.gameObjectList.Count; gameObjIndex++)
             {
                 IUpdateable[] list = partition.gameObjectList[gameObjIndex]?.GetComponents<IUpdateable>();
-                for (int i = 0; i < list.Length; i++)
+                foreach (IUpdateable updateable in list)
                 {
-                    list[i].FixedUpdateSelf();
+                    updateable.FixedUpdateSelf();
                 }
             }
         }
@@ -48,13 +49,15 @@ public class GamePlayState : GameState
         inputHandler.HandleInput();
         foreach (Partition partition in partitions)
         {
+            //kept as a for loop, accessing a list when something gets removed triggers error
             for (int gameObjIndex = 0; gameObjIndex < partition.gameObjectList.Count; gameObjIndex++)
             {
                 IUpdateable[] list = partition.gameObjectList[gameObjIndex]?.GetComponents<IUpdateable>();
-                for (int i = 0; i < list.Length; i++)
+                foreach (IUpdateable updateable in list)
                 {
-                    list[i].UpdateSelf();
+                    updateable.UpdateSelf();
                 }
+                partition.gameObjectList[gameObjIndex]?.GetComponent<Animator>()?.Update(Time.deltaTime);
             }
         }
     }

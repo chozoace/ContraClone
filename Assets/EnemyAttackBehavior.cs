@@ -78,4 +78,10 @@ public class EnemyAttackBehavior : StateMachineBehaviour
         }
     }
 
+    override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
+    {
+        animator.gameObject.GetComponent<Actor>().ExecuteAction(shootAction.getReleaseAction());
+        isShooting = false;
+    }
+
 }
