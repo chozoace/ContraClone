@@ -70,11 +70,11 @@ public class EnemyAttackBehavior : StateMachineBehaviour
             shooterObj.UpdateShootDirection(newDir);
         }
 
-        //change this to 180 rotation
-        bool flipSprite = renderer.flipX ? (newDir.x > 0) : (newDir.x <= 0);
+        bool flipSprite = renderer.gameObject.transform.rotation.eulerAngles.y == 180 ? (newDir.x > 0) : (newDir.x <= 0);
         if (flipSprite)
         {
-            renderer.flipX = !renderer.flipX;
+            float yRot = renderer.gameObject.transform.rotation.y == 0 ? 180f : 0f;
+            renderer.gameObject.transform.localRotation = Quaternion.Euler(0, yRot, 0);
         }
     }
 

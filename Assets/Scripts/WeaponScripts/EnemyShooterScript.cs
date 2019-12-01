@@ -16,11 +16,6 @@ public class EnemyShooterScript : BaseShooterScript
             shootDirection.x = transform.rotation.eulerAngles.y == 180 ? -1 : 1;
         }
         shootDirection.y = newShootDirection.y;
-        //crouching shooting
-        if (newShootDirection.y == -1 && physics.Velocity.x == 0)
-        {
-            shootDirection.y = 0;
-        }
         //straight down shooting?
 
         shootOrigin = this.shootOriginObject.transform.position;
