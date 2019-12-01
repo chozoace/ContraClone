@@ -1,7 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-[RequireComponent(typeof(TurretEnemyActor))]
 public class TurretEnemyStateManager : EnemyStateManager
 {
     private void Start()

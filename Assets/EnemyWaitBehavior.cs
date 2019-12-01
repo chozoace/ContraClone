@@ -4,7 +4,11 @@ using UnityEngine;
 
 public class EnemyWaitBehavior : StateMachineBehaviour
 {
-    public float waitTime;
+    public float alertRange;
+    public WorldGrid worldGrid;
+    public FloatReference playerHp;
+
+    private GameObject playerObject;
 
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     //override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
@@ -13,10 +17,22 @@ public class EnemyWaitBehavior : StateMachineBehaviour
     //}
 
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
-    //override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
-    //{
-    //    
-    //}
+    override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
+    {
+        if (playerObject == null)
+        {
+            //some kind of find nearest target?
+            playerObject = worldGrid.FindInWorldGridByTag("Player");
+        }
+        else
+        {
+            if (Mathf.Abs(playerObject.transform.position.x - animator.gameObject.transform.position.x) < alertRange
+                && playerHp.Value > 0f)
+            {
+                animator.SetBool("alerted", true);
+            }
+        }
+    }
 
     // OnStateExit is called when a transition ends and the state machine finishes evaluating this state
     //override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
