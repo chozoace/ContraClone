@@ -10,6 +10,7 @@ public class EnemyDeathBehavior : StateMachineBehaviour
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         //after player animation finishes, fade to black and restart from last checkpoint
+        animator.gameObject.GetComponent<IShooter>().EndShooting();
 
     }
 

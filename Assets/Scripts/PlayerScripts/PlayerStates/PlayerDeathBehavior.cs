@@ -13,6 +13,7 @@ public class PlayerDeathBehavior : StateMachineBehaviour
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         gameStateManager.ChangeGameState(GameStatesEnum.PlayerDeathState);
+        animator.gameObject.GetComponent<IShooter>().EndShooting();
         //after player animation finishes, fade to black and restart from last checkpoint
 
     }

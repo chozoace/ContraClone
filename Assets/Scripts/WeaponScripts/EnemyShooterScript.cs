@@ -5,26 +5,25 @@ public class EnemyShooterScript : BaseShooterScript
 {
     public override void UpdateShootDirection(Vector2 newShootDirection)
     {
-        shootOrigin = Vector2.zero;
         //shooting straight up idle
         if (newShootDirection.x != 0 || newShootDirection.y == 1)
         {
             shootDirection.x = newShootDirection.x;
         }
-        shootDirection.y = newShootDirection.y;
-        //to adjust standing shooting
-        if (shootDirection.y == 0)
+        //shooting while standing still
+        else if (newShootDirection.x == 0 && newShootDirection.y == 0)
         {
-            shootOrigin = new Vector2(0, 0.05f);
+            shootDirection.x = transform.rotation.eulerAngles.y == 180 ? -1 : 1;
         }
-        //to adjust running down shooting
-        else if (shootDirection.x != 0 && shootDirection.y < 0)
+        shootDirection.y = newShootDirection.y;
+        //crouching shooting
+        if (newShootDirection.y == -1 && physics.Velocity.x == 0)
         {
-            shootOrigin = new Vector2(.06f * newShootDirection.x, 0);
+            shootDirection.y = 0;
         }
         //straight down shooting?
 
-        shootOrigin = (Vector2)this.gameObject.transform.position + shootOrigin;
+        shootOrigin = this.shootOriginObject.transform.position;
         animator.SetInteger("aimY", (int)newShootDirection.y);
         animator.SetInteger("aimX", (int)newShootDirection.x);
     }
