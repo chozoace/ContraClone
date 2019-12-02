@@ -99,6 +99,59 @@ Wait
 Attack
 Patrol
 
+-----------
+
+		
+
+Level Design
+
+1. Ground 
+2. Platforms
+3. Slopes?
+4. ABSOLUTE LAST: Moving platforms
+5. Spike floors
+6. Electric walls
+7. Swinging powerlines
+8. Objects that become triggered by shooting at it
+9. Ladders
+10. rope swing?
+11. Destructable floors
+12. Falling objects
+
+Enemy Types
+1. Turret (Heavy)
+2. Running enemy, runs into player, falls off level (light)
+3. Running enemy that shoots (Medium)
+4. Flying/diving enemy (light)
+5. Floating enemy, enemy with set motion (light)
+6. Flying enemy that shoots (light)
+7. Jump enemies (Spring legs) (medium)
+8. Shield enemy (heavy)
+9. heavy swat enemy (heavy)
+
+Gun Types
+Gun Stats
+Dmg, Fire rate, range, clip size, bullet speed
+Number of bullets, Bullet angle, Tweakable homing vector stat
+Acceleration, explosion time, explosion size
+Effect on hit (AOE, none, dmg overtime, stun, knockback/pull)
+Bullet pierce count
+laser
+0. Pick up different guns
+1. Basic single fire bullet gun (Charge)
+2. Automatic fire (Fast but weak)
+3. Spread gun (short range but strong)
+4. RPG (Homing, slow rate, powerful, aoe explosion)
+5. Sniper (single fast shot, pierce)
+6. Grenade launcher (angled lobbed shot)
+7. Melee attack 
+
+Enemy gun types
+1. Laser
+2. Bombs
+3. Hammer
+4. Mines
+
 
 
 
