@@ -18,7 +18,7 @@ public class PlayerHealth : UnitHealth
 
             if (hp.Value <= 0)
             {
-                deathEvent.Invoke();
+                //deathEvent.Invoke();
                 animator.SetBool("death", true);
                 animator.SetBool("playDeathAnimation", true);
             }

@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 990c50ff2c5a5024b8a65b752f2e93c4
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - level1Track: {fileID: 8300000, guid: a2919b6d9d8674044868dcdb42dc71f7, type: 3}
+  - deathTrack: {fileID: 8300000, guid: c781de354b3b5a24d9367cdbe9ab50e9, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
