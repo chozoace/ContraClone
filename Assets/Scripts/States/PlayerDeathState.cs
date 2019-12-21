@@ -20,10 +20,15 @@ public class PlayerDeathState : GameState
 
     public override void Enter()
     {
-        //disable input handler turn on when animation is finished
+        //input handler turn on when animation is finished
     }
 
     public override void Exit()
+    {
+
+    }
+
+    public void LoadDeathMenu()
     {
 
     }
