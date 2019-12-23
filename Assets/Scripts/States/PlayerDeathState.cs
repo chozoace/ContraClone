@@ -7,6 +7,7 @@ public class PlayerDeathState : GameState
 {
     List<Partition> partitions = new List<Partition>();
     public GameStateManager gameStateManager;
+    public GameObject deathUI;
 
     public override void ClearReferences()
     {
@@ -30,7 +31,8 @@ public class PlayerDeathState : GameState
 
     public void LoadDeathMenu()
     {
-
+        //create death UI here
+        GameObject.Instantiate(deathUI, GameObject.Find("Canvas").gameObject.transform, false);       
     }
 
     public void BeginLevelReset()
