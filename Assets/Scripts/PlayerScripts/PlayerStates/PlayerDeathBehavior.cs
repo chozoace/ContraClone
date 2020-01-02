@@ -3,7 +3,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.Events;
 
-
 public class PlayerDeathBehavior : StateMachineBehaviour
 {
     private List<string> lockedStates = new List<string>();

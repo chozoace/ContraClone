@@ -9,9 +9,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 68da2aa0534ae93449efd07f9ec6c21c, type: 3}
-  m_Name: DeathStateInputHandler
+  m_Script: {fileID: 11500000, guid: 9c9ac2fa94f38584bb160bdc3088d7b9, type: 3}
+  m_Name: DeathMenuInputEvent
   m_EditorClassIdentifier: 
-  inputEvent: {fileID: 11400000, guid: de415e779ec7a9246928c8a5d68f51c5, type: 2}
-  controls:
-    confirm: 330
