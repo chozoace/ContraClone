@@ -220,6 +220,41 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &469525598 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4799376683719516706, guid: 8c97a74e67fe414429165b5317750331,
+    type: 3}
+  m_PrefabInstance: {fileID: 4799376682651561942}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &469525599
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 469525598}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f177a90c793e5ee428321d351cd2da20, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event: {fileID: 11400000, guid: 94adb5fd6cb011143908a2162dae87ce, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: 00de148b976740142896af1425a1fd98, type: 2}
+        m_MethodName: LoadDeathMenu
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!1 &895463498 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9098863073592461582, guid: 37cec9d0a1d97ea44be7b1afb9e1c32e,
@@ -241,7 +276,7 @@ PrefabInstance:
     - target: {fileID: 2192333428586051193, guid: 7352304e72c955d479316d3a23fdeb04,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.7371303
+      value: 2.5
       objectReference: {fileID: 0}
     - target: {fileID: 2192333428586051193, guid: 7352304e72c955d479316d3a23fdeb04,
         type: 3}
@@ -1257,8 +1292,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1545421235, guid: 8c97a74e67fe414429165b5317750331, type: 3}
       propertyPath: Response.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: LoadDeathMenu
+      value: BeginLevelReset
       objectReference: {fileID: 0}
+    - target: {fileID: 1545421235, guid: 8c97a74e67fe414429165b5317750331, type: 3}
+      propertyPath: Response.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 11400000, guid: 00de148b976740142896af1425a1fd98,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8c97a74e67fe414429165b5317750331, type: 3}
 --- !u!1001 &5177691177368201513
@@ -1414,7 +1454,7 @@ PrefabInstance:
     - target: {fileID: 5436440886782792167, guid: aba52e7cd3d906c4dbd2fcfd6f2c4d02,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5436440886782792165, guid: aba52e7cd3d906c4dbd2fcfd6f2c4d02,
         type: 3}
@@ -1470,6 +1510,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5436440886782792166, guid: aba52e7cd3d906c4dbd2fcfd6f2c4d02,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.696
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aba52e7cd3d906c4dbd2fcfd6f2c4d02, type: 3}

@@ -4,9 +4,14 @@ using UnityEngine;
 
 public class MenuComponent : MonoBehaviour, IActionable
 {
-    public List<RectTransform> pointerPositions;
+    public List<UIButton> uiButtons;
     private int currentPointerIndex = 0;
     public RectTransform pointer;
+
+    private void Start()
+    {
+        
+    }
 
     public void ExecuteAction(Action action)
     {
@@ -30,18 +35,18 @@ public class MenuComponent : MonoBehaviour, IActionable
     {
         if(dir > 0)
         {
-            currentPointerIndex = (currentPointerIndex + 1 > pointerPositions.Count - 1) ? 0 : currentPointerIndex + 1;
+            currentPointerIndex = (currentPointerIndex + 1 > uiButtons.Count - 1) ? currentPointerIndex : currentPointerIndex + 1;
         }
         else if(dir < 0)
         {
-            currentPointerIndex = (currentPointerIndex - 1 < 0) ? 0 : currentPointerIndex - 1;
+            currentPointerIndex = (currentPointerIndex - 1 < 0) ? currentPointerIndex : currentPointerIndex - 1;
         }
 
-        pointer.position = pointerPositions[currentPointerIndex].position;
+        pointer.position = uiButtons[currentPointerIndex].GetRectTransform().position;
     }
 
     public void makeSelection()
     {
-
+        uiButtons[currentPointerIndex].execute();
     }
 }

@@ -37,7 +37,6 @@ public class PlayerDeathState : GameState
 
     public void BeginLevelReset()
     {
-        Debug.Log("begin level reset");
         gameStateManager.RestartGameStateReferences();
         Application.LoadLevel(Application.loadedLevel);
     }

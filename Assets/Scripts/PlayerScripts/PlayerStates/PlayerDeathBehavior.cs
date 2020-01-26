@@ -22,7 +22,7 @@ public class PlayerDeathBehavior : StateMachineBehaviour
     override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         animator.SetBool("playDeathAnimation", false);
-        //begin the fade/restart
+        //Loads death menu
         postDeathEvent.Raise();
     }
 }

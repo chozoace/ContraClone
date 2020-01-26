@@ -1339,7 +1339,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameStateManager: {fileID: 11400000, guid: c1649003067184146a7a755fe3ed8002, type: 2}
-  postDeathEvent: {fileID: 11400000, guid: b6871eaaceffba64ca8aa3f6d1a9a5bb, type: 2}
+  postDeathEvent: {fileID: 11400000, guid: 94adb5fd6cb011143908a2162dae87ce, type: 2}
 --- !u!1101 &7925277355539143811
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
